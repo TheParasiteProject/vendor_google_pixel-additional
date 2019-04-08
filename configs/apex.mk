@@ -16,6 +16,9 @@
 
 ifeq ($(TARGET_SHIP_PREBUILT_APEX), true)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel-additional/apex/NetworkStack
 
