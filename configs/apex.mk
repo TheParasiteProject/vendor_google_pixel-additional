@@ -26,6 +26,10 @@ PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel-additional/apex/Netwo
 # prebuilt modules are only provided for com.google.android.xxx.
 MODULE_BUILD_FROM_SOURCE := false
 
+# Disable APEX compression
+# Keep this after including updatable_apex.mk
+PRODUCT_COMPRESSED_APEX := false
+
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
     vendor/pixel-additional/apex
