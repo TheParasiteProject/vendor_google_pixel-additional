@@ -1,0 +1,22 @@
+# Apex
+system/apex/com.google.android.adbd.apex
+system/apex/com.google.android.appsearch.apex
+system/apex/com.google.android.art.apex
+system/apex/com.google.android.cellbroadcast.apex
+system/apex/com.google.android.conscrypt.apex
+system/apex/com.google.android.extservices.apex
+system/apex/com.google.android.ipsec.apex
+system/apex/com.google.android.media.apex
+system/apex/com.google.android.media.swcodec.apex
+system/apex/com.google.android.mediaprovider.apex
+system/apex/com.google.android.neuralnetworks.apex
+system/apex/com.google.android.os.statsd.apex
+system/apex/com.google.android.permission.apex
+system/apex/com.google.android.resolv.apex
+system/apex/com.google.android.scheduling.apex
+system/apex/com.google.android.sdkext.apex
+system/apex/com.google.android.telephony.apex
+system/apex/com.google.android.tethering.apex
+system/apex/com.google.android.tzdata3.apex
+system/apex/com.google.android.wifi.apex
+system/apex/com.google.mainline.primary.libs.apex
