@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
 	NetworkPermissionConfigGoogle \
 	NetworkStackGoogle
 
+# Overlay
+PRODUCT_PACKAGES += \
+    ApexOverlay \
+    ApexSettingsOverlay
+
 # Google Apexes
 PRODUCT_PACKAGES += \
     com.google.android.adbd \
