@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+ifeq ($(TARGET_FLATTEN_APEX),false)
+
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel-additional/apex/NetworkStack
 
@@ -53,3 +55,5 @@ PRODUCT_PACKAGES += \
 	com.google.android.tzdata3 \
 	com.google.android.wifi \
 	com.google.mainline.primary.libs
+
+endif
