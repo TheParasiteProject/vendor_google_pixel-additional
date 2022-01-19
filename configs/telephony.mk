@@ -18,6 +18,11 @@
 PRODUCT_PACKAGES += \
     CarrierSettings
 
+# Overlay
+PRODUCT_PACKAGES += \
+    CarrierSettingsOverlay \
+    CarrierSettingsProviderOverlay
+
 #
 # Carrier configs by Google, parsed by CarrierSettings
 #
