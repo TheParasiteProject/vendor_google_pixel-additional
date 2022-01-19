@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
+
 # CarrierSettings, replace CarrierConfig
 PRODUCT_PACKAGES += \
     CarrierSettings
@@ -174,3 +176,5 @@ PRODUCT_PACKAGES += \
 # Disable mobile data in roaming by default.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
+
+endif
