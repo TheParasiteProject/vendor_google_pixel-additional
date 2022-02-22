@@ -21,3 +21,11 @@ prebuilt_etc {
     src: "com.google.android.apps.dialer.call_recording_audio.features.xml",
     filename_from_src: true,
 }
+
+prebuilt_etc {
+    name: "privapp-permissions-camera-go",
+    product_specific: true,
+    sub_dir: "permissions",
+    src: "privapp-permissions-camera-go.xml",
+    filename_from_src: true,
+}
