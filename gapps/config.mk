@@ -16,6 +16,9 @@
 #
 #
 
+PRODUCT_PACKAGES += \
+    ExcludePackages
+
 # Pixel Themes
 ifeq ($(TARGET_INCLUDE_PIXEL_THEMES),true)
 # Live Wallpapers
