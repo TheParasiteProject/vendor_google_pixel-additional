@@ -16,6 +16,9 @@
 #
 #
 
+PRODUCT_PACKAGES += \
+    ExcludePackages
+
 # Camera from Google (CameraGo)
 ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
