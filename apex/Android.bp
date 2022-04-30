@@ -20,6 +20,7 @@ soong_namespace {
 // Google com.google.android.adbd
 prebuilt_apex {
     name: "com.google.android.adbd",
+    apex_name: "com.android.adbd",
     src: "com.google.android.adbd.apex",
     overrides: ["com.android.adbd"],
     owner: "google",
@@ -29,6 +30,7 @@ prebuilt_apex {
 // Google com.google.android.appsearch.apex
 prebuilt_apex {
     name: "com.google.android.appsearch",
+    apex_name: "com.android.appsearch",
     src: "com.google.android.appsearch.apex",
     overrides: ["com.android.appsearch"],
     owner: "google",
@@ -38,15 +40,21 @@ prebuilt_apex {
 // Google com.google.android.art
 prebuilt_apex {
     name: "com.google.android.art",
+    apex_name: "com.android.art",
     src: "com.google.android.art.apex",
-    overrides: ["com.android.art"],
+    overrides: ["com.android.art", "com.android.art.debug"],
     owner: "google",
     prefer: true,
+    // Make fragment related files from the apex file available for use by the
+    // build when using prebuilts, e.g. for running the boot jars package check
+    // and hidden API flag validation among other uses.
+    exported_bootclasspath_fragments: ["art-bootclasspath-fragment"],
 }
 
 // Google com.google.android.cellbroadcast
 prebuilt_apex {
     name: "com.google.android.cellbroadcast",
+    apex_name: "com.android.cellbroadcast",
     src: "com.google.android.cellbroadcast.apex",
     overrides: ["com.android.cellbroadcast"],
     owner: "google",
@@ -56,15 +64,18 @@ prebuilt_apex {
 // Google com.google.android.conscrypt
 prebuilt_apex {
     name: "com.google.android.conscrypt",
+    apex_name: "com.android.conscrypt",
     src: "com.google.android.conscrypt.apex",
     overrides: ["com.android.conscrypt"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.conscrypt-bootclasspath-fragment"],
 }
 
 // Google com.google.android.extservices
 prebuilt_apex {
     name: "com.google.android.extservices",
+    apex_name: "com.android.extservices",
     src: "com.google.android.extservices.apex",
     overrides: ["com.android.extservices"],
     owner: "google",
@@ -74,24 +85,29 @@ prebuilt_apex {
 // Google com.google.android.ipsec
 prebuilt_apex {
     name: "com.google.android.ipsec",
+    apex_name: "com.android.ipsec",
     src: "com.google.android.ipsec.apex",
     overrides: ["com.android.ipsec"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.ipsec-bootclasspath-fragment"],
 }
 
 // Google com.google.android.media
 prebuilt_apex {
     name: "com.google.android.media",
+    apex_name: "com.android.media",
     src: "com.google.android.media.apex",
     overrides: ["com.android.media"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.media-bootclasspath-fragment"],
 }
 
 // Google com.google.android.media.swcodec
 prebuilt_apex {
     name: "com.google.android.media.swcodec",
+    apex_name: "com.android.media.swcodec",
     src: "com.google.android.media.swcodec.apex",
     overrides: ["com.android.media.swcodec"],
     owner: "google",
@@ -101,15 +117,18 @@ prebuilt_apex {
 // Google com.google.android.mediaprovider
 prebuilt_apex {
     name: "com.google.android.mediaprovider",
+    apex_name: "com.android.mediaprovider",
     src: "com.google.android.mediaprovider.apex",
     overrides: ["com.android.mediaprovider"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.mediaprovider-bootclasspath-fragment"],
 }
 
 // Google com.google.android.neuralnetworks
 prebuilt_apex {
     name: "com.google.android.neuralnetworks",
+    apex_name: "com.android.neuralnetworks",
     src: "com.google.android.neuralnetworks.apex",
     overrides: ["com.android.neuralnetworks"],
     owner: "google",
@@ -119,24 +138,29 @@ prebuilt_apex {
 // Google com.google.android.os.statsd
 prebuilt_apex {
     name: "com.google.android.os.statsd",
+    apex_name: "com.android.os.statsd",
     src: "com.google.android.os.statsd.apex",
     overrides: ["com.android.os.statsd"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.os.statsd-bootclasspath-fragment"],
 }
 
 // Google com.google.android.permission
 prebuilt_apex {
     name: "com.google.android.permission",
+    apex_name: "com.android.permission",
     src: "com.google.android.permission.apex",
     overrides: ["com.android.permission"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
 }
 
 // Google com.google.android.resolv
 prebuilt_apex {
     name: "com.google.android.resolv",
+    apex_name: "com.android.resolv",
     src: "com.google.android.resolv.apex",
     overrides: ["com.android.resolv"],
     owner: "google",
@@ -146,24 +170,29 @@ prebuilt_apex {
 // Google com.google.android.scheduling
 prebuilt_apex {
     name: "com.google.android.scheduling",
+    apex_name: "com.android.scheduling",
     src: "com.google.android.scheduling.apex",
     overrides: ["com.android.scheduling"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.scheduling-bootclasspath-fragment"],
 }
 
 // Google com.google.android.sdkext
 prebuilt_apex {
     name: "com.google.android.sdkext",
+    apex_name: "com.android.sdkext",
     src: "com.google.android.sdkext.apex",
     overrides: ["com.android.sdkext"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.sdkext-bootclasspath-fragment"],
 }
 
 // Google com.google.android.telephony
 prebuilt_apex {
     name: "com.google.android.telephony",
+    apex_name: "com.android.telephony",
     src: "com.google.android.telephony.apex",
     overrides: ["com.android.telephony"],
     owner: "google",
@@ -173,15 +202,18 @@ prebuilt_apex {
 // Google com.google.android.tethering
 prebuilt_apex {
     name: "com.google.android.tethering",
+    apex_name: "com.android.tethering",
     src: "com.google.android.tethering.apex",
     overrides: ["com.android.tethering"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.tethering-bootclasspath-fragment"],
 }
 
-// Google com.google.android.tzdata2
+// Google com.google.android.tzdata3
 prebuilt_apex {
     name: "com.google.android.tzdata3",
+    apex_name: "com.android.tzdata",
     src: "com.google.android.tzdata3.apex",
     overrides: ["com.android.tzdata"],
     owner: "google",
@@ -191,15 +223,18 @@ prebuilt_apex {
 // Google com.google.android.wifi
 prebuilt_apex {
     name: "com.google.android.wifi",
+    apex_name: "com.android.wifi",
     src: "com.google.android.wifi.apex",
     overrides: ["com.android.wifi"],
     owner: "google",
     prefer: true,
+    exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
 }
 
 // Google com.google.mainline.primary.libs
 prebuilt_apex {
     name: "com.google.mainline.primary.libs",
+    apex_name: "com.mainline.primary.libs",
     src: "com.google.mainline.primary.libs.apex",
     overrides: ["com.mainline.primary.libs"],
     owner: "google",
