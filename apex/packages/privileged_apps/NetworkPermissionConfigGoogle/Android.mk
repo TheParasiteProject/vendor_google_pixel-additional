@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018-2019 The Google Pixel3ROM Project
+# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
 #
 # Licensed under the Apache License, Version 2.0 (the License);
 # you may not use this file except in compliance with the License.
@@ -15,16 +16,16 @@
 #
 #
 
-LOCAL_PATH := $(call my-dir)
+#LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := ModuleMetadataGoogle
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := ModuleMetadataGoogle/ModuleMetadataGoogle.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_CLASS := APPS
-LOCAL_OVERRIDES_PACKAGES := ModuleMetadata
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := NetworkPermissionConfigGoogle
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_SRC_FILES := NetworkPermissionConfigGoogle.apk
+#LOCAL_CERTIFICATE := PRESIGNED
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_PRIVILEGED_MODULE := true
+#LOCAL_OVERRIDES_PACKAGES := NetworkPermissionConfig
+#LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+#LOCAL_PRIVATE_PLATFORM_APIS := true
+#include $(BUILD_PREBUILT)

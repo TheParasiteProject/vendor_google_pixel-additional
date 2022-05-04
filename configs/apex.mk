@@ -31,6 +31,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ModuleMetadataGoogle
 
+# Telemetry
+#PRODUCT_PACKAGES += \
+#	PrebuiltGoogleTelemetryTvp
+
 # Google NetworkStack Packages
 PRODUCT_PACKAGES += \
 	NetworkPermissionConfigGoogle \
@@ -39,7 +43,11 @@ PRODUCT_PACKAGES += \
 # Overlay
 PRODUCT_PACKAGES += \
     ApexOverlay \
-    ApexSettingsOverlay
+	NetworkStackOverlay \
+	PixelTetheringOverlay \
+    CellBroadcastReceiverOverlay \
+#	CellBroadcastServiceOverlay \
+#	GooglePermissionControllerOverlay
 
 # Google Apexes
 PRODUCT_PACKAGES += \
