@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_SUPPORTS_APEX_UPDATE), true)
+ifeq ($(TARGET_SHIP_PREBUILT_APEX), true)
 
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel-additional/apex/NetworkStack
