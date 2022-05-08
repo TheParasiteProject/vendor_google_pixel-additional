@@ -31,9 +31,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ModuleMetadataGoogle
 
+# CaptivePortalLogin
+PRODUCT_PACKAGES += \
+    CaptivePortalLoginGoogle
+
 # Telemetry
-#PRODUCT_PACKAGES += \
-#	PrebuiltGoogleTelemetryTvp
+PRODUCT_PACKAGES += \
+	PrebuiltGoogleTelemetryTvp
 
 # Google NetworkStack Packages
 PRODUCT_PACKAGES += \
