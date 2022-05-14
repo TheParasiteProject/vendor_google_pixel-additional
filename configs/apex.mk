@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 PRODUCT_PACKAGES += \
     ApexOverlay \
+    ApexSettingsOverlay \
 	NetworkStackOverlay \
 	PixelTetheringOverlay \
     CellBroadcastReceiverOverlay \
