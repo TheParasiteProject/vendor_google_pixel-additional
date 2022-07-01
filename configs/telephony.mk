@@ -183,7 +183,7 @@ PRODUCT_PACKAGES += \
     others.pb
 
 # Disable mobile data in roaming by default.
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.com.android.dataroaming=false
 
 endif
