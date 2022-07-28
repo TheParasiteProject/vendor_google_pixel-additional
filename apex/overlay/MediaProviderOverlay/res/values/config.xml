@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+** Copyright 2022, Raphielscape LLC.
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,6 +17,5 @@
 */
 -->
 <resources>
-    <string name="config_headlineFontFamily">google-sans</string>
-    <string name="help_app_permissions" translatable="false">https://support.google.com/googleplay/answer/6270602</string>
+    <string name="config_default_cloud_provider_authority">com.google.android.apps.photos.cloudpicker</string>
 </resources>
