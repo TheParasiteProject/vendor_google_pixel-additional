@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     privapp-permissions-camera-go.xml
 
 PRODUCT_PACKAGES += \
-    PixelLauncherCustomOverlayExtra
+    PixelLauncherCustomOverlayExtra \
+    PixelConfigOverlayExtra
 endif
 
 # Enable Android (Go Edition) device specific features
