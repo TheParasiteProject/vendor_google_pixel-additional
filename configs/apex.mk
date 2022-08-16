@@ -25,6 +25,7 @@ PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel-additional/apex/Netwo
 # Prebuilt module SDKs require prebuilt modules to work, and currently
 # prebuilt modules are only provided for com.google.android.xxx.
 MODULE_BUILD_FROM_SOURCE := false
+DISABLE_DEXPREOPT_CHECK := true
 
 # Disable APEX compression
 # Keep this after including updatable_apex.mk
