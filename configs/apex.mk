@@ -46,9 +46,10 @@ PRODUCT_PACKAGES += \
     ApexSettingsOverlay \
 	NetworkStackOverlay \
 	PixelTetheringOverlay \
+	CaptivePortalLoginOverlayExtra \
     CellBroadcastReceiverOverlay \
-#	CellBroadcastServiceOverlay \
-#	GooglePermissionControllerOverlay
+	CellBroadcastServiceOverlayExtra \
+	GooglePermissionControllerOverlayExtra
 
 # Google Apexes
 PRODUCT_PACKAGES += \
