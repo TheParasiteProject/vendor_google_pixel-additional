@@ -19,6 +19,12 @@ ifeq ($(TARGET_SHIP_PREBUILT_APEX), true)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Optional ART/BT/UWB/WIFI module
+MAINLINE_INCLUDE_ART_MODULE ?= true
+MAINLINE_INCLUDE_BT_MODULE ?= true
+MAINLINE_INCLUDE_UWB_MODULE ?= true
+MAINLINE_INCLUDE_WIFI_MODULE ?= true
+
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel-additional/apex/NetworkStack
 
@@ -65,13 +71,35 @@ PRODUCT_PACKAGES += \
 	CellBroadcastServiceOverlayExtra \
 	GooglePermissionControllerOverlayExtra
 
+# ART Mainline Module
+ifeq ($(MAINLINE_INCLUDE_ART_MODULE),true)
+PRODUCT_PACKAGES += \
+    com.google.android.art
+endif
+
+# Bluetooth Mainline Module
+ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
+PRODUCT_PACKAGES += \
+    com.google.android.bluetooth
+endif
+
+# UWB Mainline Module
+ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
+PRODUCT_PACKAGES += \
+    com.google.android.uwb
+endif
+
+# WIFI Mainline Module
+ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
+PRODUCT_PACKAGES += \
+    com.google.android.wifi
+endif
+
 # Google Apexes
 PRODUCT_PACKAGES += \
     com.google.android.adbd \
 	com.google.android.adservices \
 	com.google.android.appsearch \
-	com.google.android.art \
-	com.google.android.bluetooth \
 	com.google.android.cellbroadcast \
 	com.google.android.conscrypt \
 	com.google.android.extservices \
@@ -88,8 +116,6 @@ PRODUCT_PACKAGES += \
 	com.google.android.sdkext \
 	com.google.android.tethering \
 	com.google.android.tzdata4 \
-	com.google.android.uwb \
-	com.google.android.wifi \
 	com.google.mainline.primary.libs
 
 endif
