@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApexOverlay \
     ApexSettingsOverlay \
-	GoogleConfigBluetoothOverlay \
 	NetworkStackOverlay \
 	MediaProviderOverlay \
 	PixelTetheringOverlay \
@@ -81,6 +80,9 @@ endif
 ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
 PRODUCT_PACKAGES += \
     com.google.android.bluetooth
+
+PRODUCT_PACKAGES += \
+    GoogleConfigBluetoothOverlay
 endif
 
 # UWB Mainline Module
