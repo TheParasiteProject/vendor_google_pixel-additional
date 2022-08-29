@@ -2,11 +2,13 @@
 Additional Pixel stuffs
 
 ## Note for Google Play system updates support
-You need to inherit updatable APEX in your device tree
+For now, You need to add workaround to build system
+<br>Otherwise, prebuilt apex doesn't correctly work on your device
+<br>Check out this hentaiOS' commit.
 
-Corresponding device tree commit: [Add updatable_apex.mk](https://github.com/CarbonROM/android_device_google_cuttlefish/commit/d8193f25b3041b9f19f3d2f9a4710f44717d3b68)
+Corresponding build system commit: [build: Restore MODULE_BUILD_FROM_SOURCE check to ifdef](https://github.com/hentaiOS/platform_build/commit/eac77d2edead4e89b5d92a05a6a9363f13630d2d)
 
-And need to set TARGET_SHIP_PREBUILT_APEX to true in your device tree
+After that, You need to set TARGET_SHIP_PREBUILT_APEX to true in your device tree
 <br>For example, in PixelExperience, you should add this flag to aosp_(device-code-name).mk
 
 ```TARGET_SHIP_PREBUILT_APEX := true```
