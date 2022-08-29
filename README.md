@@ -6,7 +6,7 @@ For now, You need to add workaround to build system
 <br>Otherwise, prebuilt apex doesn't correctly work on your device
 <br>Check out this hentaiOS' commit.
 
-Corresponding build system commit: [build: Restore MODULE_BUILD_FROM_SOURCE check to ifdef](https://github.com/hentaiOS/platform_build/commit/eac77d2edead4e89b5d92a05a6a9363f13630d2d)
+Corresponding build system commit: [[FIXME]build: Enable MODULE_BUILD_FROM_SOURE even if the apex is prebuilt](https://github.com/hentaiOS/platform_build/commit/40d14b15ababa684d09740047555511b8e5895dc)
 
 After that, You need to set TARGET_SHIP_PREBUILT_APEX to true in your device tree
 <br>For example, in PixelExperience, you should add this flag to aosp_(device-code-name).mk
