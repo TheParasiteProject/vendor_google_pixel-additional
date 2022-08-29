@@ -5,11 +5,6 @@
     -->
     <string name="config_defaultCaptivePortalLoginPackageName" translatable="false">com.google.android.captiveportallogin</string>
 
-    <!-- System bluetooth stack package name -->
-    <string name="config_systemBluetoothStack" translatable="false">
-        com.android.bluetooth
-    </string>
-
     <!-- Component name that should be granted Notification Assistant access -->
     <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
 

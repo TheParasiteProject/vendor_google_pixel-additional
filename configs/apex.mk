@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApexOverlay \
     ApexSettingsOverlay \
+	GoogleConfigBluetoothOverlay \
 	NetworkStackOverlay \
 	MediaProviderOverlay \
 	PixelTetheringOverlay \
