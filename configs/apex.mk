@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
     ApexSettingsOverlay \
 	NetworkStackOverlay \
 	MediaProviderOverlay \
+	PixelDocumentsUIGoogleOverlayExtra \
 	PixelTetheringOverlay \
 	CaptivePortalLoginOverlayExtra \
     CellBroadcastReceiverOverlay \
