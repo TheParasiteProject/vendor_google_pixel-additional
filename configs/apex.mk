@@ -49,13 +49,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CaptivePortalLoginGoogle
 
+# DocumentsUI
+PRODUCT_PACKAGES += \
+	DocumentsUIGoogle
+
 # Telemetry
 PRODUCT_PACKAGES += \
 	PrebuiltGoogleTelemetryTvp
 
+# Adservices
+PRODUCT_PACKAGES += \
+	PrebuiltGoogleAdservicesTvp
+
 # Google NetworkStack Packages
 PRODUCT_PACKAGES += \
-	NetworkPermissionConfigGoogle \
 	NetworkStackGoogle
 
 # Overlay
