@@ -71,11 +71,13 @@ PRODUCT_PACKAGES += \
     ApexSettingsOverlay \
 	NetworkStackOverlay \
 	MediaProviderOverlay \
+	PixelConfigOverlayCommonExtra \
 	PixelDocumentsUIGoogleOverlayExtra \
 	PixelTetheringOverlay \
 	CaptivePortalLoginOverlayExtra \
     CellBroadcastReceiverOverlay \
 	CellBroadcastServiceOverlayExtra \
+	GoogleConfigOverlayExtra \
 	GooglePermissionControllerOverlayExtra
 
 # ART Mainline Module
