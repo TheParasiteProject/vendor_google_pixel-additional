@@ -65,9 +65,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	NetworkStackGoogle
 
+ifneq ($(filter NowPlayingOverlay, $(modules-get-list)),)
+PRODUCT_PACKAGES += \
+	ApexNowPlayingOverlay
+else
+PRODUCT_PACKAGES += \
+	ApexOverlay
+endif
+
 # Overlay
 PRODUCT_PACKAGES += \
-    ApexOverlay \
     ApexSettingsOverlay \
 	NetworkStackOverlay \
 	MediaProviderOverlay \
