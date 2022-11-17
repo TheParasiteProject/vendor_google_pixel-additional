@@ -20,10 +20,12 @@ ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
 PRODUCT_PACKAGES += \
     CarrierSettings
 
-# Overlay
+# Include Carrier Runtime Configuration
 PRODUCT_PACKAGES += \
+    CarrierSettingsConfigOverlay \
     CarrierSettingsOverlay \
-    CarrierSettingsProviderOverlay
+    CarrierSettingsProviderOverlay \
+    CarrierSettingsSystemUIOverlay
 
 #
 # Carrier configs by Google, parsed by CarrierSettings
