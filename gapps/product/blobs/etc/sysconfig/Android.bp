@@ -21,3 +21,11 @@ prebuilt_etc {
     src: "lily_experience.xml",
     filename_from_src: true,
 }
+
+prebuilt_etc {
+    name: "pixel_tips",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "pixel_tips.xml",
+    filename_from_src: true,
+}
