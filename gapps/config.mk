@@ -27,3 +27,9 @@ ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
     CameraGo
 endif
+
+# Enable Android (Go Edition) device specific features
+ifeq ($(TARGET_SUPPORTS_LILY_EXPERIENCE),true)
+PRODUCT_PACKAGES += \
+    lily_experience
+endif
