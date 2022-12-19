@@ -19,7 +19,8 @@
 # Camera from Google (CameraGo)
 ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
-    CameraGo
+    CameraGo \
+    privapp-permissions-camera-go.xml
 endif
 
 # Enable Android (Go Edition) device specific features
