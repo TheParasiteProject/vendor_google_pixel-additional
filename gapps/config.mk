@@ -15,3 +15,9 @@
 # limitations under the License.
 #
 #
+
+# Camera from Google (CameraGo)
+ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
+PRODUCT_PACKAGES += \
+    CameraGo
+endif
