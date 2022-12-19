@@ -21,3 +21,9 @@ ifeq ($(TARGET_SUPPORTS_CALL_RECORDING),true)
 PRODUCT_PACKAGES += \
     com.google.android.apps.dialer.call_recording_audio.features
 endif
+
+# Camera from Google (CameraGo)
+ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
+PRODUCT_PACKAGES += \
+    CameraGo
+endif
