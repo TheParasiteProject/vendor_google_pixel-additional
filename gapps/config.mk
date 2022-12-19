@@ -15,3 +15,9 @@
 # limitations under the License.
 #
 #
+
+# Call recording on Google Dialer
+ifeq ($(TARGET_SUPPORTS_CALL_RECORDING),true)
+PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features
+endif
