@@ -16,6 +16,26 @@
 #
 #
 
+# Pixel Themes
+ifeq ($(TARGET_INCLUDE_PIXEL_THEMES),true)
+# Live Wallpapers
+ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt \
+    MicropaperPrebuilt
+endif
+
+# product/app
+PRODUCT_PACKAGES += \
+    PixelThemesStub \
+    PixelThemesStub2022_and_newer \
+    PixelWallpapers2022 \
+
+# system_ext/priv-app
+PRODUCT_PACKAGES += \
+    WallpaperPickerGoogleRelease
+endif
+
 # Call recording on Google Dialer
 ifeq ($(TARGET_SUPPORTS_CALL_RECORDING),true)
 PRODUCT_PACKAGES += \
