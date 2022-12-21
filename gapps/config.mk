@@ -31,3 +31,15 @@ ifeq ($(TARGET_SUPPORTS_LILY_EXPERIENCE),true)
 PRODUCT_PACKAGES += \
     lily_experience
 endif
+
+# Include additional gapps packages
+ifeq ($(TARGET_INCLUDE_ADDITIONAL_GAPPS),true)
+PRODUCT_PACKAGES += \
+    Drive \
+    Maps \
+    PrebuiltGmail \
+    TipsPrebuilt
+
+PRODUCT_PACKAGES += \
+    pixel_tips
+endif
