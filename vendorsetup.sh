@@ -26,3 +26,4 @@ rm -Rf vendor/gapps/product/packages/apps/PrebuiltGoogleTelemetryTvp
 rm -Rf vendor/gapps/system/packages/apps/CaptivePortalLoginGoogle
 rm -Rf vendor/gapps/system/packages/privileged_apps/DocumentsUIGoogle
 rm -Rf vendor/gapps/system/packages/privileged_apps/NetworkStackGoogle
+rm -Rf vendor/aosp/rro_overlays/GooglePermissionControllerOverlay
