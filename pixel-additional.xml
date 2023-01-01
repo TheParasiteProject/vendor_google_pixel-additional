@@ -10,8 +10,13 @@
           revision="tm"
           fetch="https://git.statixos.com" />
 
-  <project path="prebuilts/module_sdk" name="sourajitk/prebuilts_module_sdk" remote="statix-git" />
-  <project path="vendor/partner_modules" name="sourajitk/vendor_partner_modules" remote="statix-git" />
+  <!-- GitLab (TheParasiteProject) -->
+  <remote name="parasite-gitlab"
+          fetch="https://gitlab.com/someone5678"
+          revision="thirteen-plus" />
+
+  <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="parasite-gitlab" />
+  <project path="vendor/partner_modules" name="vendor_partner_modules" remote="parasite-gitlab" />
 
   <remove-project name="platform/prebuilts/module_sdk/art" />
   <remove-project name="platform/prebuilts/module_sdk/AdServices" />
