@@ -4,7 +4,7 @@ Additional Pixel stuffs
 ## INFO
 After you're cloning this repo into your rom,
 <br>when the ```. build/envsetup.sh``` command executed,
-<br>this repo's [vendorsetup.sh](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/thirteen-plus/vendorsetup.sh) will automatically sync required repos from [StatiXOS](https://github.com/StatiXOS)' [Gitea](https://git.statixos.com)
+<br>this repo's [vendorsetup.sh](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/thirteen-plus/vendorsetup.sh) will automatically sync required fork repos of [StatiXOS](https://github.com/StatiXOS)' [GitLab](https://gitlab.com/statixos)
 <br>after coping [pixel-additional.xml](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/thirteen-plus/pixel-additional.xml) under `.repo/local_manifests`
 <br>and remove the packages that conflicted.
 <br>Check out those files for more informations.
@@ -21,7 +21,7 @@ And then include the `config.mk`'s path to your `device.mk`
 ```$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)```
 
 Also, you can possible to build non-updatable flattened APEX too.
-<br>Since [StatiXOS](https://github.com/StatiXOS)' [partner modules](https://git.statixos.com/sourajitk/vendor_partner_modules) supports it.
+<br>Since [StatiXOS](https://github.com/StatiXOS)' [partner modules](https://gitlab.com/statixos/android_vendor_partner_modules) supports it.
 <br>For that, set `TARGET_FLATTEN_APEX` to `true` instead.
 
 ```TARGET_FLATTEN_APEX := true```
