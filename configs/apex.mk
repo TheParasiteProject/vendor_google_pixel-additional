@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
 	PixelDocumentsUIGoogleOverlayExtra \
 	PixelTetheringOverlay \
 	CaptivePortalLoginOverlayExtra \
-	CellBroadcastReceiverOverlay \
+	CellBroadcastReceiverOverlayExtra \
 	CellBroadcastServiceOverlayExtra \
 	GoogleConfigBluetoothOverlay \
 	GoogleConfigOverlayExtra \
