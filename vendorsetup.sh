@@ -27,3 +27,6 @@ rm -Rf vendor/gapps/system/packages/apps/CaptivePortalLoginGoogle
 rm -Rf vendor/gapps/system/packages/privileged_apps/DocumentsUIGoogle
 rm -Rf vendor/gapps/system/packages/privileged_apps/NetworkStackGoogle
 rm -Rf vendor/aosp/rro_overlays/GooglePermissionControllerOverlay
+
+rm -Rf vendor/partner_modules/build/certificates/bluetooth.x509.pem
+cp vendor/pixel-additional/apex/certificates/bluetooth.x509.pem vendor/partner_modules/build/certificates/

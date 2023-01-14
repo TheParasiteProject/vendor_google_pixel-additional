@@ -1,0 +1,71 @@
+//
+// Copyright (C) 2020 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+soong_config_module_type {
+    name: "module_apex_prebuilt",
+    module_type: "prebuilt_apex",
+    config_namespace: "ANDROID",
+    bool_variables: ["module_build_from_source"],
+    properties: [
+        "prefer",
+    ],
+}
+
+package {
+    default_applicable_licenses: [
+        "Android-Apache-2.0",
+        "vendor_unbundled_google_modules_BluetoothGooglePrebuilt_license",
+    ],
+}
+
+license {
+    name: "vendor_unbundled_google_modules_BluetoothGooglePrebuilt_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+        "SPDX-license-identifier-BSD",
+        "SPDX-license-identifier-MIT",
+        "SPDX-license-identifier-Unicode-DFS",
+    ],
+    license_text: ["LICENSE"],
+}
+
+module_apex_prebuilt {
+    name: "com.google.android.bluetooth",
+    apex_name: "com.android.btservices",
+    required: [
+        "android.hardware.bluetooth@1.1",
+        "android.hardware.bluetooth.audio@2.1",
+        "android.hardware.bluetooth.audio-V2-ndk"
+    ],
+    owner: "google",
+    // Override all AOSP APEX variants, to ensure only com.google.android.bluetooth
+    // is installed regardless which APEX the logic in runtime_libart.mk has
+    // picked.
+    overrides: [
+        "com.android.bluetooth",
+        "com.android.bluetooth.debug",
+        "com.android.btservices",
+        "com.android.btservices.debug",
+    ],
+    src: "com.google.android.bluetooth.apex",
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+}
