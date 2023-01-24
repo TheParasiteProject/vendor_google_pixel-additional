@@ -24,6 +24,9 @@ ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
     CameraGo \
     privapp-permissions-camera-go.xml
+
+PRODUCT_PACKAGES += \
+    PixelLauncherCustomOverlayExtra
 endif
 
 # Enable Android (Go Edition) device specific features
