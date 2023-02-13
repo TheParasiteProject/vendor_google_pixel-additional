@@ -27,11 +27,7 @@ endif
 # Overlay
 PRODUCT_PACKAGES += \
 	ApexSettingsOverlay \
-	NetworkStackOverlay \
-	MediaProviderOverlay \
-	PixelConfigOverlayCommonExtra \
 	PixelDocumentsUIGoogleOverlayExtra \
-	PixelTetheringOverlay \
 	CaptivePortalLoginOverlayExtra \
 	CellBroadcastReceiverOverlayExtra \
 	CellBroadcastServiceOverlayExtra \
