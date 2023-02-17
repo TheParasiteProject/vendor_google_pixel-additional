@@ -19,6 +19,10 @@
 PRODUCT_PACKAGES += \
     ExcludePackages
 
+PRODUCT_PACKAGES += \
+    PixelConfigOverlayAdditional \
+    SettingsGoogleOverlayAdditional
+
 # Camera from Google (CameraGo)
 ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
