@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     PixelLauncherCustomOverlayExtra \
-    PixelConfigOverlayExtra
+    PixelConfigOverlayExtra \
+    SystemUICustomOverlayExtra
 endif
 
 # Enable Android (Go Edition) device specific features
