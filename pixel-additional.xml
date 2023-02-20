@@ -10,13 +10,8 @@
            revision="tm-qpr1"
            fetch="https://gitlab.com/statixos/" />
 
-  <!-- GitLab (TheParasiteProject) -->
-  <remote name="parasite-gitlab"
-          fetch="https://gitlab.com/someone5678"
-          revision="thirteen-plus" />
-
-  <project path="prebuilts/module_sdk" name="prebuilts_module_sdk" remote="parasite-gitlab" />
-  <project path="vendor/partner_modules" name="vendor_partner_modules" remote="parasite-gitlab" />
+  <project path="prebuilts/module_sdk" name="android_prebuilts_module_sdk" remote="statix-gitlab" />
+  <project path="vendor/partner_modules" name="android_vendor_partner_modules" remote="statix-gitlab" />
 
   <remove-project name="platform/prebuilts/module_sdk/art" />
   <remove-project name="platform/prebuilts/module_sdk/AdServices" />
