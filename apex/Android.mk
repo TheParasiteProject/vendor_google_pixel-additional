@@ -9,6 +9,6 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
 
 LOCAL_REQUIRED_MODULES += \
-    com.google.android.bluetooth
+    com.google.android.btservices
 
 include $(BUILD_PREBUILT)

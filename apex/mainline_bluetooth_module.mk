@@ -11,7 +11,7 @@ SOONG_CONFIG_bluetooth_module_source_build := false
 PRODUCT_PACKAGES += \
     MainlineBtModule
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/apex/com.google.android.bluetooth.apex
+    system/apex/com.google.android.btservices.apex
 endif
 
 ifeq (,$(findstring x86,$(TARGET_PRODUCT)))

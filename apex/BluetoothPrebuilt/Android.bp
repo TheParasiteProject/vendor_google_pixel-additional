@@ -44,7 +44,7 @@ license {
 }
 
 module_apex_prebuilt {
-    name: "com.google.android.bluetooth",
+    name: "com.google.android.btservices",
     apex_name: "com.android.btservices",
     required: [
         "android.hardware.bluetooth@1.1",
@@ -61,7 +61,7 @@ module_apex_prebuilt {
         "com.android.btservices",
         "com.android.btservices.debug",
     ],
-    src: "com.google.android.bluetooth.apex",
+    src: "com.google.android.btservices.apex",
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
