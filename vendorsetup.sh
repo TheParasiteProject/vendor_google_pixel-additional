@@ -30,3 +30,11 @@ rm -Rf vendor/aosp/rro_overlays/GooglePermissionControllerOverlay
 
 rm -Rf vendor/partner_modules/build/certificates/bluetooth.x509.pem
 cp vendor/pixel-additional/apex/certificates/bluetooth.x509.pem vendor/partner_modules/build/certificates/
+
+
+cd prebuilts/module_sdk
+git reset --hard
+git apply ../../vendor/pixel-additional/patch/0001-TMP-module_sdk-art-test-exports-Add-visibility-to-ex.patch
+
+cd ../../
+

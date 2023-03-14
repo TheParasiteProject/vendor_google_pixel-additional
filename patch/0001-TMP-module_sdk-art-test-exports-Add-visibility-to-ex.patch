@@ -1,0 +1,50 @@
+From 43db018b151027efa44c5c87024341ea2022a311 Mon Sep 17 00:00:00 2001
+From: someone5678 <nemui3353@gmail.com>
+Date: Wed, 15 Mar 2023 00:24:01 +0900
+Subject: [PATCH] [TMP] module_sdk: art: test-exports: Add visibility to
+ //external/robolectric
+
+* Temporary solution for resolving build issue until official prebuilt qpr2 sdk released
+---
+ art/current/test-exports/Android.bp | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/art/current/test-exports/Android.bp b/art/current/test-exports/Android.bp
+index 9b2d0c4..b4ce6cd 100644
+--- a/art/current/test-exports/Android.bp
++++ b/art/current/test-exports/Android.bp
+@@ -255,6 +255,7 @@ java_import {
+     sdk_member_name: "core-libart-for-host",
+     visibility: [
+         "//art/build/sdk",
++        "//external/robolectric",
+         "//external/robolectric-shadows",
+         "//frameworks/layoutlib",
+         "//libcore",
+@@ -276,6 +277,7 @@ art_prebuilt_java_import {
+     },
+     visibility: [
+         "//art/build/sdk",
++        "//external/robolectric",
+         "//external/robolectric-shadows",
+         "//frameworks/layoutlib",
+         "//libcore",
+@@ -292,6 +294,7 @@ java_import {
+     visibility: [
+         "//art/build/sdk",
+         "//external/okhttp",
++        "//external/robolectric",
+         "//external/robolectric-shadows",
+         "//prebuilts:__subpackages__",
+     ],
+@@ -312,6 +315,7 @@ art_prebuilt_java_import {
+     visibility: [
+         "//art/build/sdk",
+         "//external/okhttp",
++        "//external/robolectric",
+         "//external/robolectric-shadows",
+         "//prebuilts:__subpackages__",
+     ],
+-- 
+2.37.2
+
