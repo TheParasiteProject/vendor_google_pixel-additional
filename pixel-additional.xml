@@ -2,12 +2,12 @@
 <manifest>
   <!-- GitHub (StatiXOS) -->
   <remote  name="statix"
-           revision="tm-qpr1"
+           revision="tm-qpr2"
            fetch="https://github.com/StatiXOS/" />
 
   <!-- GitLab (StatiXOS) -->
   <remote  name="statix-gitlab"
-           revision="tm-qpr1"
+           revision="tm-qpr2"
            fetch="https://gitlab.com/statixos/" />
 
   <project path="prebuilts/module_sdk" name="android_prebuilts_module_sdk" remote="statix-gitlab" />
