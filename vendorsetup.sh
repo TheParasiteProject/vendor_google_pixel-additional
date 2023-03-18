@@ -5,21 +5,11 @@ then
     mkdir -p .repo/local_manifests
 fi
 
-if [ ! -f .repo/local_manifests/pixel-additional.xml ];
-then
-    cp vendor/pixel-additional/pixel-additional.xml .repo/local_manifests/pixel-additional.xml
-    rm -Rf prebuilts/module_sdk
-fi
+cp -Rf vendor/pixel-additional/pixel-additional.xml .repo/local_manifests/pixel-additional.xml
 
-if [ ! -d prebuilts/module_sdk ];
-then
-    repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) prebuilts/module_sdk
-fi
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) prebuilts/module_sdk
 
-if [ ! -d vendor/partner_modules ];
-then
-    repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) vendor/partner_modules
-fi
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) vendor/partner_modules
 
 rm -Rf vendor/gapps/product/packages/apps/PrebuiltGoogleAdservicesTvp
 rm -Rf vendor/gapps/product/packages/apps/PrebuiltGoogleTelemetryTvp
