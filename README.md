@@ -28,7 +28,7 @@ Also, you can possible to build non-updatable flattened APEX too.
 
 ## Note for including CarrierSettings
 You need to set `TARGET_INCLUDE_CARRIER_SETTINGS` to `true` in your device tree
-<br>For example, in [PixelExperience](https://github.com/PixelExperience), you should add this flag to `aosp_(device-code-name).mk`
+<br>For example, if [PixelExperience](https://github.com/PixelExperience), you should add this flag to `aosp_(device-code-name).mk`
 
 ```TARGET_INCLUDE_CARRIER_SETTINGS := true```
 
