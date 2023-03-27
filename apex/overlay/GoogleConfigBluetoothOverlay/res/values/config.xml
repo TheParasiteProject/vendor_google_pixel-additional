@@ -2,6 +2,6 @@
 <resources>
     <!-- System bluetooth stack package name -->
     <string name="config_systemBluetoothStack" translatable="false">
-        com.android.bluetooth
+        com.google.android.bluetooth
     </string>
 </resources>
