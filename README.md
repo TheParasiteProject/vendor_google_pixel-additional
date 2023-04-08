@@ -40,7 +40,6 @@ And then include the `config.mk`'s path to your `device.mk`
 This repo also includes several additional GApps packages, such as 
 * `TARGET_INCLUDE_CAMERA_GO`: Camera from Google (Formerly, Camera Go or GCam Go)
 * `TARGET_SUPPORTS_LILY_EXPERIENCE`: Enabling Android (Go Edition) device specific features
-* `TARGET_INCLUDE_ADDITIONAL_GAPPS`: Additional GApps (Drive, Maps, Gmail, Tips)
 
 ## Credits
 * [hentaiOS](https://github.com/hentaiOS)
