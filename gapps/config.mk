@@ -17,9 +17,6 @@
 #
 
 PRODUCT_PACKAGES += \
-    ExcludePackages
-
-PRODUCT_PACKAGES += \
     PixelConfigOverlayAdditional \
     SettingsGoogleOverlayAdditional
 
