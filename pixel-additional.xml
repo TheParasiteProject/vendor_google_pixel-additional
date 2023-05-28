@@ -10,9 +10,8 @@
            revision="tm-qpr2"
            fetch="https://gitlab.com/statixos/" />
 
-  <project path="prebuilts/module_sdk" name="android_prebuilts_module_sdk" remote="statix-gitlab" />
-  <project path="vendor/partner_modules" name="android_vendor_partner_modules" remote="statix-gitlab" />
-
+  <!-- Remove AOSP repos -->
+  <!-- Prebuilts repos -->
   <remove-project name="platform/prebuilts/module_sdk/art" />
   <remove-project name="platform/prebuilts/module_sdk/AdServices" />
   <remove-project name="platform/prebuilts/module_sdk/AppSearch" />
@@ -29,4 +28,11 @@
   <remove-project name="platform/prebuilts/module_sdk/StatsD" />
   <remove-project name="platform/prebuilts/module_sdk/Uwb" />
   <remove-project name="platform/prebuilts/module_sdk/Wifi" />
+
+  <!-- Track partner module repos -->
+  <!-- Prebuilts repos -->
+  <project path="prebuilts/module_sdk" name="android_prebuilts_module_sdk" remote="statix-gitlab" />
+
+  <!-- General repos -->
+  <project path="vendor/partner_modules" name="android_vendor_partner_modules" remote="statix-gitlab" />
 </manifest>
