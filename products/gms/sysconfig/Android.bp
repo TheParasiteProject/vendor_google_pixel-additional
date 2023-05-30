@@ -1,0 +1,7 @@
+prebuilt_etc {
+    name: "lily_experience",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "lily_experience.xml",
+    filename_from_src: true,
+}

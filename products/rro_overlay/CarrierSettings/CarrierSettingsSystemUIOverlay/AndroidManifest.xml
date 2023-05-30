@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.systemui.overlay.carriersettings"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="android" android:priority="1" android:isStatic="true" />
+
+    <application android:label="CarrierSettingsSystemUIOverlay" android:hasCode="false"/>
+</manifest>
