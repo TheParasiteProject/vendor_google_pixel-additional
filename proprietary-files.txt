@@ -234,3 +234,6 @@ product/etc/CarrierSettings/tesco_gb.pb
 product/etc/CarrierSettings/umobile_my.pb
 product/etc/CarrierSettings/vodafone_ro.pb
 product/etc/CarrierSettings/zeop_re.pb
+
+# Turbo
+system_ext/lib64/libpowerstatshaldataprovider.so

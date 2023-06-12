@@ -37,3 +37,6 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # Finish
 write_footers
+
+# Exclusions
+sed -i '/libpowerstatshaldataprovider/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
