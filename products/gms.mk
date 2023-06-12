@@ -37,3 +37,9 @@ ifeq ($(TARGET_SUPPORTS_LILY_EXPERIENCE),true)
 PRODUCT_PACKAGES += \
     lily_experience
 endif
+
+# Include TurboAdapter without Google Battery support
+ifeq ($(TARGET_NOT_SUPPORTS_GOOGLE_BATTERY),true)
+PRODUCT_PACKAGES += \
+    TurboAdapter_NoBatt
+endif
