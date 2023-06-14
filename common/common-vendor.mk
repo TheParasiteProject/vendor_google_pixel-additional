@@ -232,7 +232,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/yettel_hu.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yettel_hu.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/yoigo_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yoigo_es.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_kw.pb \
-    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb \
 
 PRODUCT_PACKAGES += \
     CarrierSettings
