@@ -2,12 +2,12 @@
 <manifest>
   <!-- GitHub (StatiXOS) -->
   <remote  name="statix"
-           revision="tm-qpr2"
+           revision="tm-qpr3"
            fetch="https://github.com/StatiXOS/" />
 
   <!-- GitLab (StatiXOS) -->
   <remote  name="statix-gitlab"
-           revision="tm-qpr2"
+           revision="tm-qpr3"
            fetch="https://gitlab.com/statixos/" />
 
   <!-- Remove AOSP repos -->
