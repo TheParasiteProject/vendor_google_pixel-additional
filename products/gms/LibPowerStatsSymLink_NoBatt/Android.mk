@@ -10,6 +10,7 @@ LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
 
+ifeq ($(TARGET_NOT_SUPPORTS_GOOGLE_BATTERY),true)
 LIBPOWERSTATS_SYMLINK := $(TARGET_OUT_SYSTEM_EXT)/priv-app/TurboAdapter_NoBatt/lib/arm64/libpowerstatshaldataprovider.so
 $(LIBPOWERSTATS_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@echo "libpowerstatshaldataprovider link: $@"
@@ -18,5 +19,6 @@ $(LIBPOWERSTATS_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /system_ext/lib64/libpowerstatshaldataprovider.so $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(LIBPOWERSTATS_SYMLINK)
+endif
 
 include $(BUILD_PREBUILT)
