@@ -34,10 +34,12 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cellcommno_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cellcommno_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/celluarone_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/celluarone_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/chatr_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/chatr_ca.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/chinamobile_hk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/chinamobile_hk.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cht_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cht_tw.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cityfone_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cityfone_ca.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/claro_pr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/claro_pr.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/congstar_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/congstar_de.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/consumercellularatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/consumercellularatt_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/consumercellulartmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/consumercellulartmo_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/coppervalley_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coppervalley_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/coriolis_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coriolis_fr.pb \
@@ -193,11 +195,17 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tmomvno_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmomvno_nl.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tmomvno_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmomvno_us.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tracfoneatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tracfoneatt_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tracfonetmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tracfonetmo_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tracfoneverizon_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tracfoneverizon_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/truemove_th.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/truemove_th.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/tstar_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tstar_tw.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/twm_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/twm_tw.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/u264a_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/u264a_ca.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/u264a_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/u264a_us.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/u264ao_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/u264ao_at.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/u264ap_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/u264ap_at.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/ultra_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ultra_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/umobile_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/umobile_my.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/unifi_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/unifi_my.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/uqmobile_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uqmobile_jp.pb \
