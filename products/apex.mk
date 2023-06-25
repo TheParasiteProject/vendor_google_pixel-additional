@@ -16,7 +16,7 @@ endif
 
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
 
-ifneq ($(filter NowPlayingOverlay, $(modules-get-list)),)
+ifeq ($(TARGET_SUPPORTS_NOW_PLAYING), true)
 PRODUCT_PACKAGES += \
 	ApexNowPlayingOverlay
 else

@@ -26,6 +26,10 @@ Also, you can possible to build non-updatable flattened APEX too.
 
 ```TARGET_FLATTEN_APEX := true```
 
+If you're device supports Now Playing feature, please set below flag,
+<br>so that you can support both Google Play system updates and Now Playing feature.
+
+```TARGET_SUPPORTS_NOW_PLAYING := true```
 ## Note for including CarrierSettings
 You need to set `TARGET_INCLUDE_CARRIER_SETTINGS` to `true` in your device tree
 <br>For example, if [PixelExperience](https://github.com/PixelExperience), you should add this flag to `aosp_(device-code-name).mk`
