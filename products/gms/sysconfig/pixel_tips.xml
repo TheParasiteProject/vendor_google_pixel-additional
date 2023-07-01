@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- Tips -->
+    <component-override package="com.google.android.apps.tips" >
+        <component class="com.google.android.apps.tips.TipsMain" enabled="false" />
+    </component-override>
+</config>
