@@ -49,9 +49,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     LibPowerStatsSymLink_NoBatt
 endif
-
-# Hide Pixel Tips from launcher
-ifneq ($(TARGET_HIDE_PIXEL_TIPS_FROM_LAUNCHER),false)
-PRODUCT_PACKAGES += \
-    pixel_tips
-endif
