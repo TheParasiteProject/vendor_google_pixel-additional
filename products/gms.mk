@@ -49,3 +49,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     LibPowerStatsSymLink_NoBatt
 endif
+
+# Resize GBoard ime key height to TARGET_GBOARD_KEY_HEIGHT
+# Value must be float e.g. 1.2
+ifneq ($(TARGET_GBOARD_KEY_HEIGHT),)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.height_ratio=$(TARGET_GBOARD_KEY_HEIGHT)
+endif
