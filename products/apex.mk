@@ -12,6 +12,10 @@ endif
 ifneq ($(MAINLINE_INCLUDE_BT_MODULE), false)
 MAINLINE_INCLUDE_BT_MODULE := true
 $(call inherit-product, vendor/pixel-additional/products/apex/mainline_bluetooth_module.mk)
+
+# Overlay
+PRODUCT_PACKAGES += \
+	GoogleConfigBluetoothOverlay
 endif
 
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
@@ -31,7 +35,6 @@ PRODUCT_PACKAGES += \
 	CaptivePortalLoginOverlayExtra \
 	CellBroadcastReceiverOverlayExtra \
 	CellBroadcastServiceOverlayExtra \
-	GoogleConfigBluetoothOverlay \
 	GoogleConfigOverlayExtra \
 	GooglePermissionControllerOverlayExtra
 
