@@ -11,35 +11,64 @@ After you're cloning this repo into your rom,
 
 ## Note for Google Play system updates support
 
+# Reminder
+You should fix VINTF entry missing errors, dlopen failures before you proceed.
+<br>Otherwise, Google Play system updates will rollbacks all updates.
+<br>Mostly, rollbacking occurs if you missed adding [VINTF](https://source.android.com/docs/core/architecture/vintf) entries in [Frameworks Compatibility Matrix](https://source.android.com/docs/core/architecture/vintf/comp-matrices) or Device Manifest (or both)
+<br>that is not marked as optional or important to operate on your system,
+<br>or dlopen failed due to missing blobs/symbols.
+
+# Add support for Google Play system updates
 You need to set `TARGET_FLATTEN_APEX` to `false` in your device tree
 <br>For example, in [PixelExperience](https://github.com/PixelExperience), you should add this flag to `aosp_(device-code-name).mk`
 
-```TARGET_FLATTEN_APEX := false```
+```M
+TARGET_FLATTEN_APEX := false
+```
 
 And then include the `config.mk`'s path to your `device.mk`
 
-```$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)```
+```M
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+```
 
 Also, you can possible to build non-updatable flattened APEX too.
 <br>Since [StatiXOS](https://github.com/StatiXOS)' [partner modules](https://gitlab.com/statixos/android_vendor_partner_modules) supports it.
 <br>For that, set `TARGET_FLATTEN_APEX` to `true` instead.
 
-```TARGET_FLATTEN_APEX := true```
+```M
+TARGET_FLATTEN_APEX := true
+```
+
+In the case that flattened APEX still not correctly built (e.g. building unbundled apps),
+<br>try set `OVERRIDE_TARGET_FLATTEN_APEX` to `true` alongside with `TARGET_FLATTEN_APEX`.
+<br>Tip: You can check whether APEX is flattened or not by checking `ro.apex.updatable`.
+
+```M
+OVERRIDE_TARGET_FLATTEN_APEX := true
+TARGET_FLATTEN_APEX := true
+```
 
 If you're device supports Now Playing feature, please set below flag,
 <br>so that you can support both Google Play system updates and Now Playing feature.
 
-```TARGET_SUPPORTS_NOW_PLAYING := true```
+```M
+TARGET_SUPPORTS_NOW_PLAYING := true
+```
 
 ## Note for including CarrierSettings
 You need to set `TARGET_INCLUDE_CARRIER_SETTINGS` to `true` in your device tree
 <br>For example, if [PixelExperience](https://github.com/PixelExperience), you should add this flag to `aosp_(device-code-name).mk`
 
-```TARGET_INCLUDE_CARRIER_SETTINGS := true```
+```M
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+```
 
 And then include the `config.mk`'s path to your `device.mk`
 
-```$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)```
+```M
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+```
 
 ## Note for including additional GApps and customizations
 This repo also includes several additional GApps packages, such as 
