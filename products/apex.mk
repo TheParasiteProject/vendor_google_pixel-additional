@@ -1,5 +1,5 @@
 # Anything including updatable_apex.mk should have done so by now.
-ifeq ($(TARGET_FLATTEN_APEX), false)
+ifneq ($(TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX), false)
 
 ifneq ($(MAINLINE_INCLUDE_UWB_MODULE), false)
 MAINLINE_INCLUDE_UWB_MODULE := true
@@ -37,7 +37,4 @@ PRODUCT_PACKAGES += \
 	CellBroadcastServiceOverlayExtra \
 	GoogleConfigOverlayExtra \
 	GooglePermissionControllerOverlayExtra
-
-else
-$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+if [ ! "$TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX" = false ];
+then
+
 if [ ! -d .repo/local_manifests ];
 then
     mkdir -p .repo/local_manifests
@@ -17,4 +20,15 @@ if [ ! "$DONT_COPY_BT_CERT" = true ];
 then
     rm -Rf vendor/partner_modules/build/certificates/bluetooth.x509.pem
     cp vendor/pixel-additional/products/apex/certificates/bluetooth.x509.pem vendor/partner_modules/build/certificates/
+fi
+
+else
+
+if [ -f .repo/local_manifests/pixel-additional.xml ];
+then
+    rm -Rf .repo/local_manifests/pixel-additional.xml
+
+    repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+fi
+
 fi
