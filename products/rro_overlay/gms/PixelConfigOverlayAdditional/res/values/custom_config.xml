@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string name="config_cameraAuxPackageAllowList" translatable="false">com.google.android.apps.cameralite</string>
+</resources>
