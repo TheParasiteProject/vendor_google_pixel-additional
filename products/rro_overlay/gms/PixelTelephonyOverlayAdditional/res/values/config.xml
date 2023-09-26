@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- String indicating the package name of the device ImsService implementation for RCS. -->
+    <string name="config_ims_rcs_package">com.shannon.rcsservice</string>
+</resources>

@@ -66,6 +66,13 @@ And then include the `config.mk`'s path to your `device.mk`
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 ```
 
+You can also includes entire Pixel IMS by setting `TARGET_INCLUDE_PIXEL_IMS` to `true` in your device tree
+<br>This stuffs will only be included when `TARGET_INCLUDE_CARRIER_SETTINGS` and `TARGET_INCLUDE_PIXEL_IMS` are both `true`.
+
+```M
+TARGET_INCLUDE_PIXEL_IMS := true
+```
+
 ## Note for including additional GApps and customizations
 This repo also includes several additional GApps packages, such as 
 * `TARGET_INCLUDE_CAMERA_GO`: Camera from Google (Formerly, Camera Go or GCam Go)

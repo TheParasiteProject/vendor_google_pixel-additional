@@ -243,4 +243,4 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb \
 
 PRODUCT_PACKAGES += \
-    CarrierSettings
+    CarrierSettings \
