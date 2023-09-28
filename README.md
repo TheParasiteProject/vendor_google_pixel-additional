@@ -73,6 +73,13 @@ You can also includes entire Pixel IMS by setting `TARGET_INCLUDE_PIXEL_IMS` to 
 TARGET_INCLUDE_PIXEL_IMS := true
 ```
 
+You can also includes Pixel eUICC by setting `TARGET_INCLUDE_PIXEL_EUICC` to `true` in your device tree
+<br>This stuffs will only be included when `TARGET_INCLUDE_CARRIER_SETTINGS` and `TARGET_INCLUDE_PIXEL_EUICC` are both `true`.
+
+```M
+TARGET_INCLUDE_PIXEL_EUICC := true
+```
+
 ## Note for including additional GApps and customizations
 This repo also includes several additional GApps packages, such as 
 * `TARGET_INCLUDE_CAMERA_GO`: Camera from Google (Formerly, Camera Go or GCam Go)
