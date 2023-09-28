@@ -85,10 +85,11 @@ This repo also includes several additional GApps packages, such as
 * `TARGET_INCLUDE_CAMERA_GO`: Camera from Google (Formerly, Camera Go or GCam Go)
 * `TARGET_SUPPORTS_LILY_EXPERIENCE`: Enabling Android (Go Edition) device specific features
 * `TARGET_NOT_SUPPORTS_GOOGLE_BATTERY`: Build TurboAdapter with dummy GoogleBatteryService
-* `TARGET_GBOARD_KEY_HEIGHT`: Resize GBoard ime key height to TARGET_GBOARD_KEY_HEIGHT (Must be float. e.g. 1.2)
+* `TARGET_GBOARD_KEY_HEIGHT`: Resize GBoard ime key height to `TARGET_GBOARD_KEY_HEIGHT` (Must be float. e.g. 1.2)
 
 ## Credits
+* [DerpFest AOSP](https://github.com/DerpFest-AOSP)
 * [hentaiOS](https://github.com/hentaiOS)
-* [StatiX](https://github.com/StatiXOS)
-* [PixelExperience](https://github.com/PixelExperience)
 * [Jarl-Penguin](https://github.com/JarlPenguin)
+* [PixelExperience](https://github.com/PixelExperience)
+* [StatiX](https://github.com/StatiXOS)
