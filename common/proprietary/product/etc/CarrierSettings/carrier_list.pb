@@ -22,8 +22,9 @@ telekom_gr
 
 20402
 20402
-
-voiceworks_nl
+
+
+enreach_nl
 20403
 
 20404GID1=2801
@@ -42,6 +43,10 @@ verizon_us
  
 truphone_zz
 2040420404794
+ 
+
+enreach_nl
+20404	204047960
 
 	cspire_nl
 20404C Spire
@@ -67,8 +72,9 @@ HOT MOBILE
 *
 truphone_zz
 20408"547275554B3030656E
-)
-20408IMSI=204080950
+ 
+
+enreach_nl
 20408	204080950
 ,
 20408SPN=RABO MOBIEL
@@ -146,9 +152,6 @@ tmobile_nl
 %
 20601IMSI=2060188
 206012060188
-
-	iijmio_jp
-20601IIJ
 &
 20601SPN=IUSACELL
 20601IUSACELL
@@ -314,9 +317,6 @@ mobiler_es
  
 carrefour_es
 214032140352
-
-simyo_es
-214032140358
 %
 21403IMSI=2140359
 214032140359
@@ -324,6 +324,9 @@ mobiler_es
 
 jazztel_es
 21403JAZZTEL
+
+simyo_es
+21403simyo
 
 	orange_es
 21403
@@ -348,9 +351,6 @@ jazztel_es
 
 21406GID1=0008
 21406"0008
-%
-21406IMSI=2140606
-214062140606
 
 
 mobiler_es
@@ -358,9 +358,15 @@ mobiler_es
  
 telecable_es
 214062140613
+
+low_es
+21406Lowi
 (
 21406SPN=PEPEPHONE
 21406	PEPEPHONE
+
+fi_es
+21406	finetwork
 
 21406
 21406
@@ -407,6 +413,9 @@ Lycamobile
 
 	yettel_hu
 21601
+
+digi_hu
+21603
 
 
 telekom_hu
@@ -638,11 +647,12 @@ windtre_it
 
 vodafone_ro
 22601
-
-22603
+
+
+telekom_ro
 22603
-
-22605
+
+digi_ro
 22605
 
 22606
@@ -654,6 +664,10 @@ $
 lycamobile_ro
 22616
 Lycamobile
+
+
+fastweb_it
+22801FASTWEB
 
 swisscom_ch
 22801
@@ -739,9 +753,6 @@ $
 
 h3_at
 23214
-
-u264a_us
-23240"4280
 
 23401
 23401
@@ -757,6 +768,9 @@ $
 
 giffgaff_gb
 23410"50
+*
+truphone_zz
+23410"547275554B3030656E
 
 o2prepaid_gb
 23410"61
@@ -788,8 +802,8 @@ $
 
 23415GID1=70
 23415"70
-
-23415GID1=A0
+
+asda_gb
 23415"A0
 
 23415GID1=B3
@@ -1317,6 +1331,9 @@ telekom_de
 
 vodafonelab_de
 26209
+
+26214_de
+26214Lebara
 
 mvno_de
 26220
@@ -1330,8 +1347,8 @@ $
 lycamobile_de
 26243
 Lycamobile
-
-google5gsalab_us
+
+google5glab_us
 262830
 
 google5glab_us
@@ -1412,6 +1429,10 @@ Lycamobile
 
 27411
 27411
+
+
+telekom_al
+27601
 
 27602
 27602
@@ -1462,10 +1483,11 @@ beeline_am
 29001
 29001
 
-29340
+a1_si
 29340
-
-29341
+
+
+telekom_si
 29341
 
 29364
@@ -1473,8 +1495,8 @@ beeline_am
 .
 29370IMSI=29370029XXXXXXX
 2937029370029
-
-29370
+
+telemach_si
 29370
 
 29401
@@ -1829,6 +1851,9 @@ tmobile_us
 
 fi_us
 310240"4276
+
+u264a_us
+310240"4280
 
 ultra_us
 310240"6132
@@ -2337,6 +2362,9 @@ $
 
 310980
 310980
+
+	evolve_us
+310990
 
 311012
 311012
@@ -2815,6 +2843,12 @@ $
 
 firstnet_us
 313140
+
+	altice_us
+313390
+)
+spectrum_us
+313450"BA01490000000000
 
 spectrumdata_us
 313450
@@ -2825,6 +2859,9 @@ $
 
 liberty_pr
 313790
+)
+spectrum_us
+314020"BA01490000000000
 
 spectrumcbrs_us
 314020
@@ -4043,14 +4080,14 @@ cheers2_in
 
 41903
 41903
-
-41904
+
+stc_kw
 41904
 
 stc_sa
 42001
-
-42003
+
+	mobily_sa
 42003
 
 42004
@@ -4081,7 +4118,7 @@ ymobile_ye
 42402
 42402
 
-42403
+du_ae
 42403
 
 dent_zz
@@ -4122,6 +4159,9 @@ partner_il
 
 42516
 42516
+
+019mobile_il
+42519
 
 
 annatel_il
@@ -4284,8 +4324,8 @@ rakuten_jp
 
 kddi_jp
 44054"10
-
-uqmobile_jp
+
+uqmobile5gsa_jp
 44054"20
 
 povo_jp
@@ -5676,4 +5716,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480 ÛÍÙ£"∂¨‘¢
+999480”ÎÌ°∫"ﬁîÔ§

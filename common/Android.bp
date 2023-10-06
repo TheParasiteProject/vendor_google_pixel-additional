@@ -43,9 +43,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QualifiedNetworksService",
+	name: "PixelQualifiedNetworksService",
 	owner: "pixel-additional",
-	apk: "proprietary/system_ext/priv-app/QualifiedNetworksService/QualifiedNetworksService.apk",
+	apk: "proprietary/system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

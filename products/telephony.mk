@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     DiagMon \
-    QualifiedNetworksService \
+    PixelQualifiedNetworksService \
     ShannonIms \
     ShannonRcs
 endif
