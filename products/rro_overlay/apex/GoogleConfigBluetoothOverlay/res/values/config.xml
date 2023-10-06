@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- System bluetooth stack package name -->
-    <string name="config_systemBluetoothStack" translatable="false">
-        com.google.android.bluetooth
-    </string>
-</resources>

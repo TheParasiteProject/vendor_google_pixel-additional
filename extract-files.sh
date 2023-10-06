@@ -63,9 +63,6 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
-# Move Bluetooth APEX
-mv "${MY_DIR}/common/proprietary/system/system/apex/com.google.android.btservices.apex" "${MY_DIR}/products/apex/BluetoothPrebuilt/"
-
 "${MY_DIR}/setup-makefiles.sh"
 
 echo "Waiting for extraction"

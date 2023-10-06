@@ -1,8 +1,5 @@
 # All unpinned blobs below are extracted from google/cheetah/cheetah:13/TQ3A.230605.012.A1/10206733:user/release-keys
 
-# Prebuilt Blutooth APEX
-system/system/apex/com.google.android.btservices.apex
-
 # Radio
 product/etc/CarrierSettings/1and1_de.pb
 product/etc/CarrierSettings/2degrees_nz.pb
