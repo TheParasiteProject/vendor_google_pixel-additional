@@ -10,7 +10,7 @@ fi
 
 #cp -Rf vendor/pixel-additional/pixel-additional.xml .repo/local_manifests/pixel-additional.xml
 
-#repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) vendor/partner_modules
+#repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) vendor/mainline_modules
 
 rm -Rf vendor/aosp/rro_overlays/GooglePermissionControllerOverlay
 

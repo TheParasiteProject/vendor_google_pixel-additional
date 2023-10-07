@@ -6,5 +6,5 @@
            fetch="https://github.com/TheParasiteProject/" />
 
   <!-- General repos -->
-  <project path="vendor/partner_modules" name="vendor_partner_modules" remote="parasite-additional" />
+  <project path="vendor/mainline_modules" name="vendor_mainline_modules" remote="parasite-additional" />
 </manifest>
