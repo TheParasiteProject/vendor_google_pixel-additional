@@ -4,8 +4,8 @@ Additional Pixel stuffs
 ## INFO
 After you're cloning this repo into your rom,
 <br>when the ```. build/envsetup.sh``` command executed,
-<br>this repo's [vendorsetup.sh](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/thirteen-plus/vendorsetup.sh) will automatically sync required fork repos of [StatiXOS](https://github.com/StatiXOS)' [GitLab](https://gitlab.com/statixos)
-<br>after coping [pixel-additional.xml](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/thirteen-plus/pixel-additional.xml) under `.repo/local_manifests`
+<br>this repo's [vendorsetup.sh](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/fourteen/vendorsetup.sh) will automatically sync required fork repos
+<br>after coping [pixel-additional.xml](https://github.com/TheParasiteProject/vendor_pixel-additional/blob/fourteen/pixel-additional.xml) under `.repo/local_manifests`
 <br>and remove the packages that conflicted.
 <br>Check out those files for more informations.
 
