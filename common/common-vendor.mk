@@ -9,10 +9,13 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/1and1_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/1and1_de.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/2degrees_nz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/2degrees_nz.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/a1_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/a1_at.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/a1_si.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/a1_si.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/ahamo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ahamo_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/ais_th.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ais_th.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/altice_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/altice_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/apt_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/apt_tw.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/asda_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/asda_gb.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/assurance_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/assurance_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/astca_as.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/astca_as.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/att5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att5g_us.pb \
@@ -48,18 +51,25 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cspire_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cspire_nl.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cspire_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cspire_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/default.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/default.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/digi_hu.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/digi_hu.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/digi_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/digi_my.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/digi_ro.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/digi_ro.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/dishatt_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dishatt_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/dito_ph.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dito_ph.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/dna_fi.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/dna_fi.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/docomo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/docomo_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/docomomvno_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/docomomvno_jp.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/du_ae.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/du_ae.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/eastlink_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/eastlink_ca.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/ee_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ee_gb.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/eir_ie.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/eir_ie.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/elisa1_fi.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/elisa1_fi.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/elisa2_fi.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/elisa2_fi.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/enreach_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/enreach_nl.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/eplus_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/eplus_de.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/esn_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/esn_gb.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/euskaltel_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/euskaltel_es.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/evolve_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/evolve_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/fastweb_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fastweb_it.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/fet_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fet_tw.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/fi_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fi_at.pb \
@@ -83,10 +93,12 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/h3g27202_ie.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3g27202_ie.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/halebop_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/halebop_se.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/homobile_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/homobile_it.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/hotmobile_il.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/hotmobile_il.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/ice_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ice_no.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/idea_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idea_in.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/idmobile_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idmobile_gb.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/iliad_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/iliad_it.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/jazztel_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/jazztel_es.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/kddi_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kddi_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/kddimvno_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kddimvno_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/kena_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kena_it.pb \
@@ -101,6 +113,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/maxis_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/maxis_my.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/meo_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/meo_pt.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/metropcs_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/metropcs_us.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/mobily_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mobily_sa.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/movistar_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_es.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/nextech_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nextech_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/nos_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/nos_pt.pb \
@@ -148,6 +161,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/singtel_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/singtel_sg.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/skinny_nz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/skinny_nz.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/sky_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sky_gb.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/smartone_hk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/smartone_hk.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/smarty_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/smarty_gb.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/softbank_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/softbank_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/solomobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/solomobile_ca.pb \
@@ -157,6 +171,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/sprintprepaid_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintprepaid_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/sprintwholesale_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintwholesale_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/starhub_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/starhub_sg.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/stc_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/stc_kw.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/stc_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/stc_sa.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/strata_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/strata_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/sunrise_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sunrise_ch.pb \
@@ -173,7 +188,10 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telekom_hr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_hr.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telekom_hu.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_hu.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telekom_pl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_pl.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telekom_ro.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_ro.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telekom_si.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_si.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telekom_sk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telekom_sk.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telemach_si.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telemach_si.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telenet_be.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telenet_be.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telenor_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telenor_dk.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/telenor_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telenor_no.pb \
@@ -208,6 +226,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/ultra_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ultra_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/umobile_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/umobile_my.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/unifi_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/unifi_my.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/uqmobile5gsa_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uqmobile5gsa_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/uqmobile_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uqmobile_jp.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/uscc_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/uscc_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/verizon_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/verizon_us.pb \
