@@ -263,6 +263,7 @@ system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
 system_ext/etc/permissions/com.google.euiccpixel.xml
 
 # IMS
+product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 system_ext/etc/permissions/com.shannon.imsservice.xml
 system_ext/etc/permissions/com.shannon.rcsservice.xml
 system_ext/lib/libmediaadaptor.so
