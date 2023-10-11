@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/consumercellulartmo_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/consumercellulartmo_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/coppervalley_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coppervalley_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/coriolis_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/coriolis_fr.pb \
+    vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cox_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cox_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cricket5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cricket5g_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cricket_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cricket_us.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/cspire_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/cspire_nl.pb \
@@ -260,6 +261,7 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/yoigo_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/yoigo_es.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_kw.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb \
+    vendor/pixel-additional/common/proprietary/system_ext/lib64/libimsmedia.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia.so \
 
 PRODUCT_PACKAGES += \
     CarrierSettings \

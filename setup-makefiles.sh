@@ -49,6 +49,8 @@ sed -i '/com.shannon.imsservice.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/
 sed -i '/com.shannon.rcsservice.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
 sed -i '/DiagMon/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
 sed -i '/EuiccGoogle/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
+sed -i '/ImsMediaService/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
+sed -i '/libmedia.so/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
 sed -i '/libmediaadaptor.so/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
 sed -i '/PixelQualifiedNetworksService/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
 sed -i '/ShannonIms/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"

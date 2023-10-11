@@ -12,5 +12,6 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="com.google.euiccpixel.permission.SECURE_ELEMENT" />
         <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     </privapp-permissions>
 </permissions>
