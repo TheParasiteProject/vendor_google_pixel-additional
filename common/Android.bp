@@ -55,18 +55,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PixelQualifiedNetworksService",
-	owner: "pixel-additional",
-	apk: "proprietary/system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "ShannonIms",
 	owner: "pixel-additional",
 	apk: "proprietary/system_ext/priv-app/ShannonIms/ShannonIms.apk",

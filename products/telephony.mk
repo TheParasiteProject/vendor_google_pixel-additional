@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DiagMon \
     ImsMediaService \
-    PixelQualifiedNetworksService \
     ShannonIms \
     ShannonRcs
 endif

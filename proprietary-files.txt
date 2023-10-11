@@ -270,7 +270,6 @@ system_ext/etc/permissions/com.shannon.rcsservice.xml
 system_ext/lib64/libimsmedia.so
 system_ext/lib64/libmediaadaptor.so
 system_ext/priv-app/ImsMediaService/ImsMediaService.apk;PRESIGNED
-system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 
