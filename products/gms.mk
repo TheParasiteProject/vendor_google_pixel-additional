@@ -16,10 +16,6 @@
 #
 #
 
-PRODUCT_PACKAGES += \
-    PixelConfigOverlayAdditional \
-    SettingsGoogleOverlayAdditional
-
 # Camera from Google (CameraGo)
 ifeq ($(TARGET_INCLUDE_CAMERA_GO),true)
 PRODUCT_PACKAGES += \
@@ -27,9 +23,9 @@ PRODUCT_PACKAGES += \
     privapp-permissions-camera-go
 
 PRODUCT_PACKAGES += \
-    PixelLauncherCustomOverlayExtra \
-    PixelConfigOverlayExtra \
-    SystemUICustomOverlayExtra
+    PixelLauncherCustomOverlayCameraGo \
+    PixelConfigOverlayCameraGo \
+    SystemUICustomOverlayCameraGo
 endif
 
 # Enable Android (Go Edition) device specific features

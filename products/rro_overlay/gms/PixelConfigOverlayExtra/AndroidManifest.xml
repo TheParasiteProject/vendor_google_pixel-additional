@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.android.overlay.pixelconfigs.extra">
-    <application android:label="PixelConfigOverlayExtra" android:hasCode="false"/>
-    <overlay android:priority="1" android:targetPackage="android" android:isStatic="true"/>
-</manifest>

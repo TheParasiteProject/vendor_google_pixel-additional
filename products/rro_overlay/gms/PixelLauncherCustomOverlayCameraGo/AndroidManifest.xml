@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.apps.nexuslauncher.custom.overlay.camerago">
+    <overlay android:isStatic="true" android:priority="0" android:targetName="PixelLauncherCustomOverlayCameraGo" android:targetPackage="com.google.android.apps.nexuslauncher"/>
+
+    <application android:hasCode="false" android:label="PixelLauncherCustomOverlayCameraGo"/>
+</manifest>
