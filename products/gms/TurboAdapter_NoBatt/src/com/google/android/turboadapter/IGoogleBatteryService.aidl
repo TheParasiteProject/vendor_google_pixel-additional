@@ -7,6 +7,8 @@ interface IGoogleBatteryService {
 
     void getProperty(int i, int i2, in ResultReceiver resultReceiver);
 
+    String getStringProperty(int i, int i2);
+
     String getVersion();
 
     boolean isAdaptiveChargingEnabled();
@@ -16,6 +18,4 @@ interface IGoogleBatteryService {
     boolean setProperty(int i, int i2, int i3);
 
     boolean setStringProperty(int i, int i2, String str);
-
-    String getStringProperty(int i, int i2);
 }

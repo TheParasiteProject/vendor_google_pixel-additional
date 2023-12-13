@@ -6,6 +6,8 @@ import android.os.IInterface;
 import android.os.RemoteException;
 
 public interface IGoogleBattery extends IInterface {
+    public static final String DESCRIPTOR = "vendor$google$google_battery$IGoogleBattery".replace('$', '.');
+
     ChargingStage getChargingStageAndDeadline() throws RemoteException;
 
     int getProperty(int i, int i2) throws RemoteException;

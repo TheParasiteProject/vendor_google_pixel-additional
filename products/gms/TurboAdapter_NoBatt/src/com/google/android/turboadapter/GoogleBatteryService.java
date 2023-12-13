@@ -39,16 +39,8 @@ public class GoogleBatteryService extends Service {
         }
 
         @Override
-        public void getChargingStageAndDeadline(ResultReceiver resultReceiver) {
-        }
-
-        @Override
-        public void getProperty(int i, int i2, ResultReceiver resultReceiver) {
-        }
-
-        @Override
         public String getVersion() {
-            return "3";
+            return "4";
         }
 
         @Override
@@ -62,8 +54,16 @@ public class GoogleBatteryService extends Service {
         }
 
         @Override
+        public void getChargingStageAndDeadline(ResultReceiver resultReceiver) {
+        }
+
+        @Override
         public boolean setProperty(int i, int i2, int i3) {
             return false;
+        }
+
+        @Override
+        public void getProperty(int i, int i2, ResultReceiver resultReceiver) {
         }
 
         @Override
