@@ -5,8 +5,8 @@ Additional Pixel stuffs
 
 ### Reminder
 You should fix VINTF entry missing errors, dlopen failures, system app crashes before you proceed.
-<br>Otherwise, Google Play system updates will rollbacks all updates.
-<br>Mostly, rollbacking occurs if you missed adding [VINTF](https://source.android.com/docs/core/architecture/vintf) entries in [Frameworks Compatibility Matrix](https://source.android.com/docs/core/architecture/vintf/comp-matrices) or Device Manifest (or both)
+<br>Otherwise, Google Play system updates will rollbacks all updates or even causing bootloop.
+<br>Mostly, rollbacking/bootlooping occurs if you missed adding [VINTF](https://source.android.com/docs/core/architecture/vintf) entries in [Frameworks Compatibility Matrix](https://source.android.com/docs/core/architecture/vintf/comp-matrices) or Device Manifest (or both)
 <br>that is not marked as optional or important to operate on your system,
 <br>or dlopen failed due to missing blobs/symbols,
 <br>or frequent system app crashes (e.g. MIUI Camera app).
