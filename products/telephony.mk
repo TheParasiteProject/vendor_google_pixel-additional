@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+ifeq ($(TARGET_INCLUDE_CARRIER_SERVICES), true)
+PRODUCT_PACKAGES += \
+    CarrierServices
+endif
+
 ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
 
 # Include Carrier Runtime Configuration

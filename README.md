@@ -73,6 +73,12 @@ You can also includes Pixel eUICC by setting `TARGET_INCLUDE_PIXEL_EUICC` to `tr
 TARGET_INCLUDE_PIXEL_EUICC := true
 ```
 
+You can also includes Carrier Services by setting `TARGET_INCLUDE_CARRIER_SERVICES` to `true` in your device tree
+
+```M
+TARGET_INCLUDE_CARRIER_SERVICES := true
+```
+
 ## Note for including additional GApps and customizations
 This repo also includes several additional GApps packages, such as 
 * `TARGET_INCLUDE_CAMERA_GO`: Camera from Google (Formerly, Camera Go or GCam Go)
