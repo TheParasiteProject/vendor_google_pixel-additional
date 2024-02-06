@@ -19,19 +19,6 @@ PRODUCT_PACKAGES += \
     CarrierServices
 endif
 
-ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
-
-# Include Carrier Runtime Configuration
-PRODUCT_PACKAGES += \
-    CarrierSettingsConfigOverlay \
-    CarrierSettingsOverlay \
-    CarrierSettingsProviderOverlay \
-    CarrierSettingsSystemUIOverlay
-
-# Disable mobile data in roaming by default.
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.com.android.dataroaming=false
-
 ifeq ($(TARGET_INCLUDE_PIXEL_IMS), true)
 PRODUCT_PACKAGES += \
     PixelTelephonyOverlayAdditional
@@ -59,6 +46,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccGoogle
 endif
+
+ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGES += \
+    CarrierSettingsConfigOverlay \
+    CarrierSettingsOverlay \
+    CarrierSettingsProviderOverlay \
+    CarrierSettingsSystemUIOverlay
+
+# Disable mobile data in roaming by default.
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.com.android.dataroaming=false
 
 $(call inherit-product, vendor/pixel-additional/common/common-vendor.mk)
 endif

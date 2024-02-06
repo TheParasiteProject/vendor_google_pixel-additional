@@ -59,25 +59,11 @@ And then include the `config.mk`'s path to your `device.mk`
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 ```
 
-You can also includes entire Pixel IMS by setting `TARGET_INCLUDE_PIXEL_IMS` to `true` in your device tree
-<br>This stuffs will only be included when `TARGET_INCLUDE_CARRIER_SETTINGS` and `TARGET_INCLUDE_PIXEL_IMS` are both `true`.
+## Note for including more telephony components
 
-```M
-TARGET_INCLUDE_PIXEL_IMS := true
-```
-
-You can also includes Pixel eUICC by setting `TARGET_INCLUDE_PIXEL_EUICC` to `true` in your device tree
-<br>This stuffs will only be included when `TARGET_INCLUDE_CARRIER_SETTINGS` and `TARGET_INCLUDE_PIXEL_EUICC` are both `true`.
-
-```M
-TARGET_INCLUDE_PIXEL_EUICC := true
-```
-
-You can also includes Carrier Services by setting `TARGET_INCLUDE_CARRIER_SERVICES` to `true` in your device tree
-
-```M
-TARGET_INCLUDE_CARRIER_SERVICES := true
-```
+* `TARGET_INCLUDE_PIXEL_IMS`: Pixel IMS
+* `TARGET_INCLUDE_PIXEL_EUICC`: Pixel eUICC
+* `TARGET_INCLUDE_CARRIER_SERVICES`: Google Carrier Services
 
 ## Note for including additional GApps and customizations
 This repo also includes several additional GApps packages, such as 
