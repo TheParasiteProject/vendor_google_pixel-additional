@@ -34,15 +34,11 @@ TARGET_SUPPORTS_NOW_PLAYING := true
 
 If you don't want to/can't support this feature,
 <br>Set `TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX` to `false`
-<br> in both of your `device.mk` and `vendorsetup.sh`
+<br> in both of your `device.mk`
 <br>This will allows you to use AOSP APEX.
 
 ```M
 TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX := false
-```
-
-```Shell
-export TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX=false
 ```
 
 ## Note for including CarrierSettings
