@@ -20,6 +20,9 @@ PRODUCT_PACKAGES += \
 endif
 
 ifeq ($(TARGET_INCLUDE_PIXEL_IMS), true)
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/pixel-additional/common
+
 PRODUCT_PACKAGES += \
     PixelTelephonyOverlayAdditional
 
@@ -39,6 +42,9 @@ PRODUCT_PACKAGES += \
 endif
 
 ifeq ($(TARGET_INCLUDE_PIXEL_EUICC), true)
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/pixel-additional/common
+
 PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml \
     vendor/pixel-additional/common/proprietary/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml
