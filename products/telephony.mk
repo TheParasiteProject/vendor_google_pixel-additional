@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ifneq ($(TARGET_SHIP_GMS),false)
 ifeq ($(TARGET_INCLUDE_CARRIER_SERVICES), true)
 PRODUCT_PACKAGES += \
     CarrierServices
@@ -66,4 +67,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.com.android.dataroaming=false
 
 $(call inherit-product, vendor/pixel-additional/common/common-vendor.mk)
+endif
 endif
