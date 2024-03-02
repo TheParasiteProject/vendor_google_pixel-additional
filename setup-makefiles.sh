@@ -40,18 +40,3 @@ write_footers
 
 # Exclusions
 sed -i '/libpowerstatshaldataprovider/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-
-# Radio/IMS
-sed -i '/com.android.sdm.plugins.diagmon.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/com.google.euiccpixel.permissions.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/com.google.euiccpixel.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/com.shannon.imsservice.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/com.shannon.rcsservice.xml/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/DiagMon/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/EuiccGoogle/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/ImsMediaService/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/libmedia.so/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/libmediaadaptor.so/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/PixelQualifiedNetworksService/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/ShannonIms/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"
-sed -i '/ShannonRcs/d' "${ANDROID_ROOT}/vendor/pixel-additional/common/common-vendor.mk"

@@ -291,7 +291,6 @@ PRODUCT_COPY_FILES += \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_kw.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_sa.pb \
     vendor/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb \
-    vendor/pixel-additional/common/proprietary/system_ext/lib64/libimsmedia.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia.so \
 
 PRODUCT_PACKAGES += \
-    CarrierSettings \
+    CarrierSettings

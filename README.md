@@ -25,13 +25,6 @@ And then include the `config.mk`'s path to your `device.mk`
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 ```
 
-If you're device supports Now Playing feature, please set below flag,
-<br>so that you can support both Google Play system updates and Now Playing feature.
-
-```M
-TARGET_SUPPORTS_NOW_PLAYING := true
-```
-
 If you don't want to/can't support this feature,
 <br>Set `TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX` to `false`
 <br> in both of your `device.mk`
@@ -57,11 +50,10 @@ $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 
 ## Note for including more telephony components
 
-* `TARGET_INCLUDE_PIXEL_IMS`: Pixel IMS
-* `TARGET_INCLUDE_PIXEL_EUICC`: Pixel eUICC
 * `TARGET_INCLUDE_CARRIER_SERVICES`: Google Carrier Services
 
 ## Note for including additional GApps and customizations
+
 This repo also includes several additional GApps packages, such as 
 * `TARGET_INCLUDE_CAMERA_GO`: Camera from Google (Formerly, Camera Go or GCam Go)
 * `TARGET_SUPPORTS_LILY_EXPERIENCE`: Enabling Android (Go Edition) device specific features
