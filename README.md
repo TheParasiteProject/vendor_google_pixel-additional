@@ -12,14 +12,7 @@ You should fix VINTF entry missing errors, dlopen failures, system app crashes b
 <br>or frequent system app crashes (e.g. MIUI Camera app).
 
 ### Add support for Google Play system updates
-You need to set `TARGET_FLATTEN_APEX` to `false` in your device tree
-<br>For example, in [PixelExperience](https://github.com/PixelExperience), you should add this flag to `aosp_(device-code-name).mk`
-
-```M
-TARGET_FLATTEN_APEX := false
-```
-
-And then include the `config.mk`'s path to your `device.mk`
+You need to include the `config.mk`'s path to your `device.mk`
 
 ```M
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
