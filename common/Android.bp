@@ -12,6 +12,7 @@ android_app_import {
 	owner: "pixel-additional",
 	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
 	overrides: ["CarrierConfig"],
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
