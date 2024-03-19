@@ -1,0 +1,18 @@
+# All unpinned blobs below are extracted from google/cheetah/cheetah:13/TQ3A.230605.012.A1/10206733:user/release-keys
+
+# Radio
+product/etc/permissions/com.android.sdm.plugins.diagmon.xml
+product/priv-app/DiagMon/DiagMon.apk
+product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
+system_ext/etc/permissions/com.google.euiccpixel.xml
+
+# IMS
+product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
+system_ext/etc/permissions/com.shannon.imsservice.xml
+system_ext/etc/permissions/com.shannon.rcsservice.xml
+system_ext/lib64/libimsmedia.so
+system_ext/lib64/libmediaadaptor.so
+system_ext/priv-app/ImsMediaService/ImsMediaService.apk;PRESIGNED
+system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
+system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED

@@ -22,36 +22,40 @@ endif
 
 ifeq ($(TARGET_INCLUDE_PIXEL_IMS), true)
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/pixel-additional/common
+    vendor/pixel-additional/radio
 
 PRODUCT_PACKAGES += \
     PixelTelephonyOverlayAdditional
 
 PRODUCT_COPY_FILES += \
-    vendor/pixel-additional/common/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
-    vendor/pixel-additional/common/proprietary/product/etc/sysconfig/allowlist_com.shannon.imsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.shannon.imsservice.xml \
-    vendor/pixel-additional/common/proprietary/system_ext/etc/permissions/com.shannon.imsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.imsservice.xml \
-    vendor/pixel-additional/common/proprietary/system_ext/etc/permissions/com.shannon.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.rcsservice.xml \
-    vendor/pixel-additional/common/proprietary/system_ext/lib64/libimsmedia.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia.so \
-    vendor/pixel-additional/common/proprietary/system_ext/lib64/libmediaadaptor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediaadaptor.so
+    vendor/pixel-additional/radio/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
+    vendor/pixel-additional/radio/proprietary/product/etc/sysconfig/allowlist_com.shannon.imsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.shannon.imsservice.xml \
+    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.shannon.imsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.imsservice.xml \
+    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.shannon.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.rcsservice.xml \
+    vendor/pixel-additional/radio/proprietary/system_ext/lib64/libimsmedia.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia.so \
+    vendor/pixel-additional/radio/proprietary/system_ext/lib64/libmediaadaptor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediaadaptor.so
 
 PRODUCT_PACKAGES += \
     DiagMon \
     ImsMediaService \
     ShannonIms \
     ShannonRcs
+
+$(call inherit-product, vendor/pixel-additional/radio/radio-vendor.mk)
 endif
 
 ifeq ($(TARGET_INCLUDE_PIXEL_EUICC), true)
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/pixel-additional/common
+    vendor/pixel-additional/radio
 
 PRODUCT_COPY_FILES += \
-    vendor/pixel-additional/common/proprietary/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml \
-    vendor/pixel-additional/common/proprietary/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml
+    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml \
+    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml
 
 PRODUCT_PACKAGES += \
     EuiccGoogle
+
+$(call inherit-product, vendor/pixel-additional/radio/radio-vendor.mk)
 endif
 
 ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)

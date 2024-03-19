@@ -45,6 +45,8 @@ $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 
 ## Note for including more telephony components
 
+* `TARGET_INCLUDE_PIXEL_IMS`: Pixel IMS
+* `TARGET_INCLUDE_PIXEL_EUICC`: Pixel eUICC
 * `TARGET_INCLUDE_CARRIER_SERVICES`: Google Carrier Services
 
 ## Note for including additional GApps and customizations
