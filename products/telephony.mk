@@ -59,6 +59,9 @@ $(call inherit-product, vendor/pixel-additional/radio/radio-vendor.mk)
 endif
 
 ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
+
+TARGET_REQUIRES_APN_CONF := false
+
 # Include Carrier Runtime Configuration
 PRODUCT_PACKAGES += \
     CarrierSettingsConfigOverlay \
