@@ -55,6 +55,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccGoogle
 
+# Custom hidden api whitelist
+PRODUCT_PACKAGES += \
+    com.google.android.euicc_whitelist_custom.xml
+
 $(call inherit-product, vendor/pixel-additional/radio/radio-vendor.mk)
 endif
 

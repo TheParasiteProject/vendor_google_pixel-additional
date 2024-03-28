@@ -5,3 +5,11 @@ prebuilt_etc {
     src: "lily_experience.xml",
     filename_from_src: true,
 }
+
+prebuilt_etc {
+    name: "com.google.android.euicc_whitelist_custom.xml",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "com.google.android.euicc_whitelist_custom.xml",
+    filename_from_src: true,
+}
