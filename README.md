@@ -1,4 +1,4 @@
-# vendor_pixel-additional
+# vendor_google_pixel-additional
 Additional Pixel stuffs
 
 ## Note for Google Play system updates support
@@ -17,7 +17,7 @@ First, you need to add commit [build: Enable MODULE_BUILD_FROM_SOURE even if the
 After that, you need to include the `config.mk`'s path to your `device.mk`
 
 ```M
-$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel-additional/config.mk)
 ```
 
 If you don't want to/can't support this feature,
@@ -40,7 +40,7 @@ TARGET_INCLUDE_CARRIER_SETTINGS := true
 And then include the `config.mk`'s path to your `device.mk`
 
 ```M
-$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel-additional/config.mk)
 ```
 
 ## Note for including more telephony components

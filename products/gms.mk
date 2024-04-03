@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     TurboAdapter_NoBatt
 
 PRODUCT_COPY_FILES += \
-    vendor/pixel-additional/common/proprietary/system_ext/lib64/libpowerstatshaldataprovider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerstatshaldataprovider.so
+    vendor/google/pixel-additional/common/proprietary/system_ext/lib64/libpowerstatshaldataprovider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerstatshaldataprovider.so
 
 PRODUCT_PACKAGES += \
     LibPowerStatsSymLink_NoBatt

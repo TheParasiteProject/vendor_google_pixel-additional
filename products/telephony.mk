@@ -22,18 +22,18 @@ endif
 
 ifeq ($(TARGET_INCLUDE_PIXEL_IMS), true)
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/pixel-additional/radio
+    vendor/google/pixel-additional/radio
 
 PRODUCT_PACKAGES += \
     PixelTelephonyOverlayAdditional
 
 PRODUCT_COPY_FILES += \
-    vendor/pixel-additional/radio/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
-    vendor/pixel-additional/radio/proprietary/product/etc/sysconfig/allowlist_com.shannon.imsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.shannon.imsservice.xml \
-    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.shannon.imsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.imsservice.xml \
-    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.shannon.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.rcsservice.xml \
-    vendor/pixel-additional/radio/proprietary/system_ext/lib64/libimsmedia.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia.so \
-    vendor/pixel-additional/radio/proprietary/system_ext/lib64/libmediaadaptor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediaadaptor.so
+    vendor/google/pixel-additional/radio/proprietary/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml \
+    vendor/google/pixel-additional/radio/proprietary/product/etc/sysconfig/allowlist_com.shannon.imsservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.shannon.imsservice.xml \
+    vendor/google/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.shannon.imsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.imsservice.xml \
+    vendor/google/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.shannon.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.shannon.rcsservice.xml \
+    vendor/google/pixel-additional/radio/proprietary/system_ext/lib64/libimsmedia.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia.so \
+    vendor/google/pixel-additional/radio/proprietary/system_ext/lib64/libmediaadaptor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediaadaptor.so
 
 PRODUCT_PACKAGES += \
     DiagMon \
@@ -41,16 +41,16 @@ PRODUCT_PACKAGES += \
     ShannonIms \
     ShannonRcs
 
-$(call inherit-product, vendor/pixel-additional/radio/radio-vendor.mk)
+$(call inherit-product, vendor/google/pixel-additional/radio/radio-vendor.mk)
 endif
 
 ifeq ($(TARGET_INCLUDE_PIXEL_EUICC), true)
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/pixel-additional/radio
+    vendor/google/pixel-additional/radio
 
 PRODUCT_COPY_FILES += \
-    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml \
-    vendor/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml
+    vendor/google/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml \
+    vendor/google/pixel-additional/radio/proprietary/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml
 
 PRODUCT_PACKAGES += \
     EuiccGoogle
@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.google.android.euicc_whitelist_custom.xml
 
-$(call inherit-product, vendor/pixel-additional/radio/radio-vendor.mk)
+$(call inherit-product, vendor/google/pixel-additional/radio/radio-vendor.mk)
 endif
 
 ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
@@ -77,6 +77,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.com.android.dataroaming=false
 
-$(call inherit-product, vendor/pixel-additional/common/common-vendor.mk)
+$(call inherit-product, vendor/google/pixel-additional/common/common-vendor.mk)
 endif
 endif
