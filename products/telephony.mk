@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-ifneq ($(TARGET_SHIP_GMS),false)
+ifneq ($(WITH_GMS),false)
+
 ifeq ($(TARGET_INCLUDE_CARRIER_SERVICES), true)
 PRODUCT_PACKAGES += \
     CarrierServices
@@ -79,4 +80,5 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 $(call inherit-product, vendor/google/pixel-additional/common/common-vendor.mk)
 endif
-endif
+
+endif #WITH_GMS

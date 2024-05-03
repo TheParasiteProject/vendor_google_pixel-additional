@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
     lily_experience
 endif
 
-ifneq ($(TARGET_SHIP_GMS),false)
+ifneq ($(WITH_GMS),false)
+
 # Include TurboAdapter without Google Battery support
 ifeq ($(TARGET_NOT_SUPPORTS_GOOGLE_BATTERY),true)
 PRODUCT_PACKAGES += \
@@ -53,4 +54,5 @@ ifneq ($(TARGET_GBOARD_KEY_HEIGHT),)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.height_ratio=$(TARGET_GBOARD_KEY_HEIGHT)
 endif
-endif
+
+endif #WITH_GMS
