@@ -42,12 +42,12 @@ public interface IGoogleBattery extends IInterface {
 
             @Override
             public void setChargingDeadline(int i) throws RemoteException {
-                /* Do nothing */
+                throw new RemoteException("Method setChargingDeadline is unimplemented.");
             }
 
             @Override
             public ChargingStage getChargingStageAndDeadline() throws RemoteException {
-                return null;
+                throw new RemoteException("Method getChargingStageAndDeadline is unimplemented.");
             }
 
             @Override
@@ -57,17 +57,17 @@ public interface IGoogleBattery extends IInterface {
 
             @Override
             public void setProperty(int i, int i2, int i3) throws RemoteException {
-                /* Do nothing */
+                throw new RemoteException("Method setProperty is unimplemented.");
             }
 
             @Override
             public void setStringProperty(int i, int i2, String str) throws RemoteException {
-                /* Do nothing */
+                throw new RemoteException("Method setStringProperty is unimplemented.");
             }
 
             @Override
             public String getStringProperty(int i, int i2) throws RemoteException {
-                return null;
+                throw new RemoteException("Method getStringProperty is unimplemented.");
             }
         }
     }
