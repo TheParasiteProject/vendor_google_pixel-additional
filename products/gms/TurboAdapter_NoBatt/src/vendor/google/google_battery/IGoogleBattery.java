@@ -47,7 +47,7 @@ public interface IGoogleBattery extends IInterface {
 
             @Override
             public ChargingStage getChargingStageAndDeadline() throws RemoteException {
-                throw new RemoteException("Method getChargingStageAndDeadline is unimplemented.");
+                return null;
             }
 
             @Override
@@ -67,7 +67,7 @@ public interface IGoogleBattery extends IInterface {
 
             @Override
             public String getStringProperty(int i, int i2) throws RemoteException {
-                throw new RemoteException("Method getStringProperty is unimplemented.");
+                return null;
             }
         }
     }
