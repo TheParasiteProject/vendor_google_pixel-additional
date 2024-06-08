@@ -12,7 +12,7 @@ You should fix VINTF entry missing errors, dlopen failures, system app crashes b
 <br>or frequent system app crashes (e.g. MIUI Camera app).
 
 ### Add support for Google Play system updates
-First, you need to add commit [build: Enable MODULE_BUILD_FROM_SOURE even if the apex is prebuilt](https://github.com/TheParasiteProject/build/commit/c943b5da907727d1af544cd6a92d34aa8c75dfef) to build repo.<br>
+First, you need to add commit [build: Enable MODULE_BUILD_FROM_SOURE even if the apex is prebuilt](https://github.com/TheParasiteProject/build/commit/2e74d275c52d65a522db13a06494137ffd098f67) to build repo.<br>
 
 After that, you need to include the `config.mk`'s path to your `device.mk`
 
@@ -20,10 +20,13 @@ After that, you need to include the `config.mk`'s path to your `device.mk`
 $(call inherit-product-if-exists, vendor/google/pixel-additional/config.mk)
 ```
 
-If you don't want to/can't support this feature,
-<br>Set `TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX` to `false`
-<br> in both of your `device.mk`
-<br>This will allows you to use AOSP APEX.
+If your device support Google Pixel's Now Playing feature,
+<br>you could enable it by setting `TARGET_SUPPORTS_NOW_PLAYING := true` in your `device.mk`.
+<br>
+
+If you don't want to/can't support Google Play system updates,
+<br>Set `TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX := false` in your `device.mk`.
+<br>This will allows you to use AOSP's source build APEX.
 
 ```M
 TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX := false
