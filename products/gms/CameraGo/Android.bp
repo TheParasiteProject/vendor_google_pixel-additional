@@ -4,9 +4,13 @@ android_app_import {
 	overrides: ["Aperture", "Camera", "Camera2", "Snap", "SnapdragonCamera"],
 	presigned: true,
 	preprocessed: true,
-	dex_preopt: {
-		enabled: false,
-	},
+    dex_preopt: {
+        enabled: true,
+    },
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
 	privileged: true,
 	product_specific: true,
 }

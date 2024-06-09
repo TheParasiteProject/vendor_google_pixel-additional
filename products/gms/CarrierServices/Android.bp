@@ -3,9 +3,14 @@ android_app_import {
 	apk: "CarrierServices.apk",
 	presigned: true,
 	preprocessed: true,
-	dex_preopt: {
-		enabled: false,
-	},
+    dex_preopt: {
+        enabled: true,
+    },
+    optional_uses_libs: [
+        "org.apache.http.legacy",
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
 	privileged: true,
 	product_specific: true,
 }
