@@ -33,9 +33,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ImsMediaService",
+	name: "PixelImsMediaService",
 	owner: "google/pixel-additional",
-	apk: "proprietary/system_ext/priv-app/ImsMediaService/ImsMediaService.apk",
+	apk: "proprietary/system_ext/priv-app/PixelImsMediaService/PixelImsMediaService.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {

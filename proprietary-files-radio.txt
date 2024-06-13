@@ -11,8 +11,8 @@ system_ext/etc/permissions/com.google.euiccpixel.xml
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 system_ext/etc/permissions/com.shannon.imsservice.xml
 system_ext/etc/permissions/com.shannon.rcsservice.xml
-system_ext/lib64/libimsmedia.so
+system_ext/lib64/libpixelimsmedia.so
 system_ext/lib64/libmediaadaptor.so
-system_ext/priv-app/ImsMediaService/ImsMediaService.apk;PRESIGNED
+system_ext/priv-app/PixelImsMediaService/PixelImsMediaService.apk;PRESIGNED
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
