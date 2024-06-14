@@ -74,9 +74,10 @@ PRODUCT_PACKAGES += \
     CarrierSettingsProviderOverlay \
     CarrierSettingsSystemUIOverlay
 
-# Disable mobile data in roaming by default.
+# Include common SIM configuration proprieties
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.com.android.dataroaming=false
+    keyguard.no_require_sim=true \
+    ro.com.android.prov_mobiledata=false
 
 $(call inherit-product, vendor/google/pixel-additional/common/common-vendor.mk)
 endif
