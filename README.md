@@ -10,8 +10,12 @@ You should fix VINTF entry missing errors, dlopen failures, system app crashes b
 <br>that is not marked as optional or important to operate on your system,
 <br>or dlopen failed due to missing blobs/symbols,
 <br>or frequent system app crashes (e.g. MIUI Camera app).
+<br>For kernel version < 4.19, you might want to apply upstream bpf patches and spoofing.
 
 ### Add support for Google Play system updates
+First, you need to track [prebuilts/modules_sdk](https://gitlab.com/someone5678/prebuilts_module_sdk) in your manifest,<br>
+which should replaces repos under `prebuilts/module_sdk/*`.
+
 You need to include the `config.mk`'s path to your `device.mk`
 
 ```M
