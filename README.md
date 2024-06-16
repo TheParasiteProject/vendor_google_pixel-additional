@@ -12,9 +12,7 @@ You should fix VINTF entry missing errors, dlopen failures, system app crashes b
 <br>or frequent system app crashes (e.g. MIUI Camera app).
 
 ### Add support for Google Play system updates
-First, you need to add commit [build: Enable MODULE_BUILD_FROM_SOURE even if the apex is prebuilt](https://github.com/TheParasiteProject/build/commit/2e74d275c52d65a522db13a06494137ffd098f67) to build repo.<br>
-
-After that, you need to include the `config.mk`'s path to your `device.mk`
+You need to include the `config.mk`'s path to your `device.mk`
 
 ```M
 $(call inherit-product-if-exists, vendor/google/pixel-additional/config.mk)
