@@ -43,9 +43,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/google/pixel-additional/common/proprietary/system_ext/lib64/libpowerstatshaldataprovider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerstatshaldataprovider.so
-
-PRODUCT_PACKAGES += \
-    LibPowerStatsSymLink_NoBatt
 endif #TARGET_SUPPORTS_GOOGLE_BATTERY
 
 # Resize GBoard ime key height to TARGET_GBOARD_KEY_HEIGHT

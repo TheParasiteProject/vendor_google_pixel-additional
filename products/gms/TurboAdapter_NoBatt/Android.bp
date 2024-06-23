@@ -35,4 +35,15 @@ android_app {
     overrides: [
         "TurboAdapter",
     ],
+
+    required: [
+        "LibPowerStatsSymLink_NoBatt",
+    ]
+}
+
+install_symlink {
+    name: "LibPowerStatsSymLink_NoBatt",
+    system_ext_specific: true,
+    installed_location: "priv-app/TurboAdapter_NoBatt/lib/arm64/libpowerstatshaldataprovider.so",
+    symlink_target: "/system_ext/lib64/libpowerstatshaldataprovider.so",
 }
