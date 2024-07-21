@@ -160,6 +160,6 @@ public class GoogleBatteryService extends Service {
     }
 
     public static void dlog(String msg) {
-        if (DEBUG) Log.d(TAG, msg);
+        Log.i(TAG, msg);
     }
 }
