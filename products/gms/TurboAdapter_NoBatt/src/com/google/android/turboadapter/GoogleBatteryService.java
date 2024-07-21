@@ -14,6 +14,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 
 public class GoogleBatteryService extends Service {
+    private static final boolean DEBUG = false;
+    private static final String TAG = GoogleBatteryService.class.getName();
+
     private GoogleBatteryProxyDummy mBinder;
     ExecutorService mSingleThreadExecutor = Executors.newSingleThreadExecutor();
 
@@ -53,41 +56,49 @@ public class GoogleBatteryService extends Service {
 
         @Override
         public String getVersion() {
+            dlog("getVersion");
             return "4";
         }
 
         @Override
         public boolean isAdaptiveChargingEnabled() {
+            dlog("isAdaptiveChargingEnabled");
             return false;
         }
 
         @Override
         public boolean setChargingDeadline(int i) {
+            dlog("setChargingDeadline: i=" + i);
             return false;
         }
 
         @Override
         public void getChargingStageAndDeadline(ResultReceiver resultReceiver) {
+            dlog("getChargingStageAndDeadline");
             runOnBackgroundThread(new GetChargingStageAndDeadlineRunnable(resultReceiver));
         }
 
         @Override
         public boolean setProperty(int i, int i2, int i3) {
+            dlog("setProperty: i=" + i + ", i2=" + i2 + ", i3=" + i3);
             return false;
         }
 
         @Override
         public void getProperty(int i, int i2, ResultReceiver resultReceiver) {
+            dlog("getProperty: i=" + i + ", i2=" + i2);
             runOnBackgroundThread(new GetBatteryPropertyRunnable(i, i2, resultReceiver));
         }
 
         @Override
         public boolean setStringProperty(int i, int i2, String str) {
+            dlog("setStringProperty: i=" + i + ", i2=" + i2 + ", str=" + str);
             return false;
         }
 
         @Override
         public String getStringProperty(int i, int i2) {
+            dlog("getStringProperty: i=" + i + ", i2=" + i2);
             return null; // TODO: Correctly report dummy value
         }
     }
@@ -146,5 +157,9 @@ public class GoogleBatteryService extends Service {
             return batteryManager.isCharging();
         }
         return false;
+    }
+
+    public static void dlog(String msg) {
+        if (DEBUG) Log.d(TAG, msg);
     }
 }
