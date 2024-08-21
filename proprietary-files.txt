@@ -12,6 +12,7 @@ product/etc/CarrierSettings/a1_si.pb
 product/etc/CarrierSettings/ahamo_jp.pb
 product/etc/CarrierSettings/airtel_in.pb
 product/etc/CarrierSettings/ais_th.pb
+product/etc/CarrierSettings/alticeroaming_us.pb
 product/etc/CarrierSettings/altice_us.pb
 product/etc/CarrierSettings/andorratelecom_ad.pb
 product/etc/CarrierSettings/antel_uy.pb
@@ -149,6 +150,7 @@ product/etc/CarrierSettings/masmovil_es.pb
 product/etc/CarrierSettings/maxis_my.pb
 product/etc/CarrierSettings/meo_pt.pb
 product/etc/CarrierSettings/metropcs_us.pb
+product/etc/CarrierSettings/mobifone_vn.pb
 product/etc/CarrierSettings/mobily_sa.pb
 product/etc/CarrierSettings/monacotelecom_mc.pb
 product/etc/CarrierSettings/movistar_es.pb
@@ -343,7 +345,7 @@ product/etc/CarrierSettings/zain_bh.pb
 product/etc/CarrierSettings/zain_kw.pb
 product/etc/CarrierSettings/zain_sa.pb
 product/etc/CarrierSettings/zeop_re.pb
-product/priv-app/CarrierSettings_signed_45.0.591154042/CarrierSettings_signed_45.0.591154042.apk:product/priv-app/CarrierSettings/CarrierSettings.apk;OVERRIDES=CarrierConfig;PRESIGNED
+product/priv-app/CarrierSettings_signed_47.0.602606545/CarrierSettings_signed_47.0.602606545.apk:product/priv-app/CarrierSettings/CarrierSettings.apk;OVERRIDES=CarrierConfig;PRESIGNED
 
 # Turbo
 system_ext/lib64/libpowerstatshaldataprovider.so
