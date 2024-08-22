@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/ais_th.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ais_th.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/altice_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/altice_us.pb \
+    vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/alticeroaming_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/alticeroaming_us.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/andorratelecom_ad.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/andorratelecom_ad.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/antel_uy.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/antel_uy.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/appalachian_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/appalachian_us.pb \
@@ -154,6 +155,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/maxis_my.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/maxis_my.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/meo_pt.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/meo_pt.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/metropcs_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/metropcs_us.pb \
+    vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/mobifone_vn.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mobifone_vn.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/mobily_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/mobily_sa.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/monacotelecom_mc.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/monacotelecom_mc.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/movistar_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_es.pb \
