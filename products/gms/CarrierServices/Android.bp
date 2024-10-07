@@ -1,8 +1,8 @@
 android_app_import {
-	name: "CarrierServices",
-	apk: "CarrierServices.apk",
-	presigned: true,
-	preprocessed: true,
+    name: "CarrierServices",
+    apk: "CarrierServices.apk",
+    presigned: true,
+    preprocessed: true,
     dex_preopt: {
         enabled: true,
     },
@@ -11,6 +11,6 @@ android_app_import {
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
-	privileged: true,
-	product_specific: true,
+    privileged: true,
+    product_specific: true,
 }

@@ -1,9 +1,15 @@
 android_app_import {
-	name: "CameraGo",
-	apk: "CameraGo.apk",
-	overrides: ["Aperture", "Camera", "Camera2", "Snap", "SnapdragonCamera"],
-	presigned: true,
-	preprocessed: true,
+    name: "CameraGo",
+    apk: "CameraGo.apk",
+    overrides: [
+        "Aperture",
+        "Camera",
+        "Camera2",
+        "Snap",
+        "SnapdragonCamera",
+    ],
+    presigned: true,
+    preprocessed: true,
     dex_preopt: {
         enabled: true,
     },
@@ -11,6 +17,6 @@ android_app_import {
         "androidx.window.extensions",
         "androidx.window.sidecar",
     ],
-	privileged: true,
-	product_specific: true,
+    privileged: true,
+    product_specific: true,
 }

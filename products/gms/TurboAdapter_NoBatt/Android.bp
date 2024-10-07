@@ -1,4 +1,4 @@
-java_import  {
+java_import {
     name: "TurboAdapter-lib",
     sdk_version: "current",
     jars: ["libs/TurboAdapter-lib.jar"],
@@ -38,7 +38,7 @@ android_app {
 
     required: [
         "LibPowerStatsSymLink_NoBatt",
-    ]
+    ],
 }
 
 install_symlink {
