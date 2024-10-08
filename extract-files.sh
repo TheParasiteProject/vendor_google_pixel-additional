@@ -64,6 +64,13 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTIO
 
 "${MY_DIR}/setup-makefiles.sh"
 
+# Initialize the helper
+setup_vendor "radio" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+
+extract "${MY_DIR}/proprietary-files-radio.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+
+"${MY_DIR}/setup-makefiles.sh"
+
 echo "Waiting for extraction"
 wait
 echo "All done"

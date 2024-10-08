@@ -42,3 +42,19 @@ write_footers
 
 # Exclusions
 sed -i '/libpowerstatshaldataprovider/d' "${ANDROID_ROOT}/vendor/google/pixel-additional/common/common-vendor.mk"
+
+# Initialize the helper
+setup_vendor "radio" "${VENDOR}" "${ANDROID_ROOT}" true
+
+# Warning headers and guards
+write_headers "arm64"
+sed -i 's|TARGET_DEVICE|TARGET_ARCH|g' "${ANDROIDMK}"
+sed -i 's|vendor/google/pixel-additional/|vendor/google/pixel-additional/common|g' "${PRODUCTMK}"
+sed -i 's|device/google/pixel-additional//setup-makefiles.sh|vendor/google/pixel-additional/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+
+write_makefiles "${MY_DIR}/proprietary-files-radio.txt" true
+
+# Finish
+write_footers
+
+cp -rf ${MY_DIR}/radiovendormk.txt ${MY_DIR}/radio/radio-vendor.mk
