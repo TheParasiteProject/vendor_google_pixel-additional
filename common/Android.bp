@@ -8,7 +8,8 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libpowerstatshaldataprovider",
+	name: "libpowerstatshaldataprovider.nobatt",
+	stem: "libpowerstatshaldataprovider",
 	owner: "google/pixel-additional",
 	strip: {
 		none: true,
