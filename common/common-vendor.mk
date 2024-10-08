@@ -349,7 +349,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_bh.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_bh.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_kw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_kw.pb \
     vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/zain_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zain_sa.pb \
-    vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb \
+    vendor/google/pixel-additional/common/proprietary/product/etc/CarrierSettings/zeop_re.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/zeop_re.pb
 
 PRODUCT_PACKAGES += \
     CarrierSettings
