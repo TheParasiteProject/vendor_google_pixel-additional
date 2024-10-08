@@ -348,4 +348,4 @@ product/etc/CarrierSettings/zeop_re.pb
 product/priv-app/CarrierSettings_signed_47.0.602606545/CarrierSettings_signed_47.0.602606545.apk:product/priv-app/CarrierSettings/CarrierSettings.apk;OVERRIDES=CarrierConfig;PRESIGNED
 
 # Turbo
-system_ext/lib64/libpowerstatshaldataprovider.so
+system_ext/lib64/libpowerstatshaldataprovider.so;DISABLE_CHECKELF
