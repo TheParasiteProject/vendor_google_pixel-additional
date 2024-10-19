@@ -37,13 +37,13 @@ android_app {
     ],
 
     required: [
-        "LibPowerStatsSymLink_NoBatt",
+        "libpowerstatshaldataprovider_libpowerstatshaldataprovider_symlink64.nobatt",
     ],
 }
 
 install_symlink {
-    name: "LibPowerStatsSymLink_NoBatt",
-    system_ext_specific: true,
-    installed_location: "priv-app/TurboAdapter_NoBatt/lib/arm64/libpowerstatshaldataprovider.so",
-    symlink_target: "/system_ext/lib64/libpowerstatshaldataprovider.so",
+	name: "libpowerstatshaldataprovider_libpowerstatshaldataprovider_symlink64.nobatt",
+	system_ext_specific: true,
+	installed_location: "priv-app/TurboAdapter_NoBatt/lib/arm64/libpowerstatshaldataprovider.so",
+	symlink_target: "/system_ext/lib64/libpowerstatshaldataprovider.so",
 }
