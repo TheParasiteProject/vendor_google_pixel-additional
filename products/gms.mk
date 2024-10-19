@@ -40,7 +40,7 @@ ifneq ($(WITH_GMS),false)
 ifeq ($(TARGET_SUPPORTS_GOOGLE_BATTERY),false)
 PRODUCT_PACKAGES += \
     TurboAdapter_NoBatt \
-    libpowerstatshaldataprovider.nobatt
+    libpowerstatshaldataprovider
 endif #TARGET_SUPPORTS_GOOGLE_BATTERY
 
 # Resize GBoard ime key height to TARGET_GBOARD_KEY_HEIGHT
