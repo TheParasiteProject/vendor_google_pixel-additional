@@ -63,23 +63,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/google/pixel-additional/radio/radio-vendor.mk)
 endif
 
-ifeq ($(TARGET_INCLUDE_CARRIER_SETTINGS), true)
-
-TARGET_REQUIRES_APN_CONF := false
-
-# Include Carrier Runtime Configuration
-PRODUCT_PACKAGES += \
-    CarrierSettingsConfigOverlay \
-    CarrierSettingsOverlay \
-    CarrierSettingsProviderOverlay \
-    CarrierSettingsSystemUIOverlay
-
-# Include common SIM configuration proprieties
-PRODUCT_VENDOR_PROPERTIES += \
-    keyguard.no_require_sim=true \
-    ro.com.android.prov_mobiledata=false
-
-$(call inherit-product, vendor/google/pixel-additional/common/common-vendor.mk)
-endif
-
 endif #WITH_GMS
